@@ -83,6 +83,7 @@ proficient and therefore productive in.
 A good introduction to version-control concepts using Mercurial.
 
 ### Command-line
+
 - [zsh](https://wiki.archlinux.org/index.php/Zsh)
 
 A shell with nice completions.
@@ -126,12 +127,14 @@ Easily converts between markup formats.
 
 - [Project Euler](http://projecteuler.net/)
 
-Lots of problems which require the use of programs to solve them. Many
-of these problems require some mathematical knowledge.
+Lots of problems which require you to write programs to solve
+them. Quite a few of these problems require some mathematical
+knowledge.
 
 - [Programming Praxis](http://programmingpraxis.com/)
 
-Some practical programming problems in addtition to the sorts of problems found at [Project Euler](http://projecteuler.net/)
+Some practical programming problems in addtition to the sorts of
+problems found at [Project Euler](http://projecteuler.net/)
 
 ## Linux Distributions
 
