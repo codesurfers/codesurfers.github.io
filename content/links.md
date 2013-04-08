@@ -4,13 +4,13 @@
 
 ### Tutorials
 
-If you are new to programming, read
+If you are new to programming, it might be better to read
 [SICP](http://mitpress.mit.edu/sicp/full-text/book/book.html) or the
 [Python Tutorial](http://docs.python.org/3/tutorial/) first.
 
 - [Structure and Interpretation of Computer Programs (SICP)](http://mitpress.mit.edu/sicp/full-text/book/book.html)
 
-
+An introduction to computation and programming.
 
 - [Learn you a Haskell for great good](http://learnyouahaskell.com/chapters)
 
@@ -55,8 +55,6 @@ A functional (as in FP) Lisp.
 - [JavaScript Garden](http://bonsaiden.github.com/JavaScript-Garden/)
 - [HTML Specification](http://www.w3.org/TR/html51/)
 
-# Programming links that we find interesting
-
 ## Tools
 
 ### Text editors
@@ -76,13 +74,15 @@ proficient and therefore productive in.
 
 - [Notepad++](http://www.notepad-plus-plus.org/)
 
+An feature-laden, easy to use text editor.
+
 ### Version Control
 
+Version Control Systems (VCS) make it easy to do distributed
+collaborative development.
+
 - [Pro Git](http://git-scm.com/book)
-
 - [Mercurial](http://hginit.com/01.html)
-
-A good introduction to version-control concepts using Mercurial.
 
 ### Command-line
 
@@ -125,6 +125,8 @@ Easily converts between markup formats.
 
 - [RFC](http://www.rfc-editor.org/rfc-index2.html)
 
+Freely available specifications for various internet-related protocols.
+
 ## Programming Exercises
 
 - [Project Euler](http://projecteuler.net/)
@@ -138,7 +140,7 @@ knowledge.
 Some practical programming problems in addtition to the sorts of
 problems found at [Project Euler](http://projecteuler.net/)
 
-## Linux Distributions
+## Operating Systems
 
 - [Debian](http://www.debian.org/)
 - [Arch Linux](https://www.archlinux.org/)
