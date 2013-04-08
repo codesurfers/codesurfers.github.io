@@ -9,11 +9,13 @@ If you are new to programming, read
 [Python Tutorial](http://docs.python.org/3/tutorial/) first.
 
 - [Structure and Interpretation of Computer Programs (SICP)](http://mitpress.mit.edu/sicp/full-text/book/book.html)
+
+
+
 - [Learn you a Haskell for great good](http://learnyouahaskell.com/chapters)
 
 A good tutorial to learn the basics of functional programming with Haskell.
 
-- [Learn You Some Erlang for Great Good](http://learnyousomeerlang.com/content)
 - [Eloquent Javascript](http://eloquentjavascript.net/contents.html)
 - [Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
 - [The Python Tutorial](http://docs.python.org/3/tutorial/)
