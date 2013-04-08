@@ -17,7 +17,13 @@ An introduction to computation and programming.
 A good tutorial to learn the basics of functional programming with Haskell.
 
 - [Eloquent Javascript](http://eloquentjavascript.net/contents.html)
+
+A modern introduction to web development using Javascript.
+
 - [Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
+
+A fun Ruby tutorial.
+
 - [The Python Tutorial](http://docs.python.org/3/tutorial/)
 
 Nice little tutorial that will get you up to speed with basic
