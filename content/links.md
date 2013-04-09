@@ -22,12 +22,12 @@ A modern introduction to web development using Javascript.
 
 - [Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
 
-A fun Ruby tutorial.
+gsathya refuses to suggest a suitable description for this
+tutorial.
 
 - [The Python Tutorial](http://docs.python.org/3/tutorial/)
 
-Nice little tutorial that will get you up to speed with basic
-programming.
+Nice tutorial that will get you up to speed with basic programming.
 
 - [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
@@ -55,6 +55,9 @@ A functional (as in FP) Lisp.
 
 ### Web
 
+Learning how to make webpages is a handy skill to have. It
+doesn't take very long to gain an understanding of the basics of HTML/CSS.
+
 - [CSS Positioning](http://alistapart.com/article/css-positioning-101)
 - [CSS Floats](http://alistapart.com/article/css-floats-101)
 - [JavaScript Guide](https://developer.mozilla.org/en-US/docs/JavaScript/Guide)
@@ -64,6 +67,9 @@ A functional (as in FP) Lisp.
 ## Tools
 
 ### Text editors
+
+Knowing how to efficiently use a text editor is one of the most useful
+secondary skills of any programmer.
 
 - [Vim](http://www.vim.org/others.php)
 
