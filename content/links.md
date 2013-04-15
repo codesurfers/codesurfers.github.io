@@ -22,7 +22,7 @@ A modern introduction to web development using Javascript.
 
 - [Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
 
-gsathya refuses to suggest a suitable description for this
+[gsathya](http://gsathya.in/) refuses to suggest a suitable description for this
 tutorial.
 
 - [The Python Tutorial](http://docs.python.org/3/tutorial/)
@@ -32,7 +32,7 @@ Nice tutorial that will get you up to speed with basic programming.
 - [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
 A practical introduction to Common Lisp.
-
+ 
 - [LLVM Tutorial](http://llvm.org/docs/tutorial/index.html)
 
 ### Newer programming languages
@@ -56,7 +56,7 @@ A functional (as in FP) Lisp.
 ### Web
 
 Learning how to make webpages is a handy skill to have. It
-doesn't take very long to gain an understanding of the basics of HTML/CSS.
+doesn't take very long to gain an understanding of the basics.
 
 - [CSS Positioning](http://alistapart.com/article/css-positioning-101)
 - [CSS Floats](http://alistapart.com/article/css-floats-101)
@@ -73,25 +73,23 @@ secondary skills of any programmer.
 
 - [Vim](http://www.vim.org/others.php)
 
-A modal text editor that many have been able to become proficient and
-therefore productive in. It has nice keybindings and a focus on
-developer productivity.
+A modal text editor that has nice keybindings. Its emphasis is on
+speed.
 
 - [Emacs](http://www.gnu.org/software/emacs/tour/)
 
 A text editor that is part of an operating system containing a
-file-manager, calculator, games and even a package manager that is
-written in a dialect of Lisp that many have been able to become
-proficient and therefore productive in.
+file-manager, calculator, games and even a package manager. It can be
+extended in trivial and extremely non-trivial ways with Emacs Lisp.
 
 - [Notepad++](http://www.notepad-plus-plus.org/)
 
-An feature-laden, easy to use text editor.
+A feature-laden, easy to use text editor.
 
 ### Version Control
 
-Version Control Systems (VCS) make it easy to do distributed
-collaborative development.
+A Version Control System (VCS) is used to track changes in files. It
+also makes distributed collaborative development possible.
 
 - [Pro Git](http://git-scm.com/book)
 - [Mercurial](http://hginit.com/01.html)
@@ -155,17 +153,28 @@ problems found at [Project Euler](http://projecteuler.net/)
 ## Operating Systems
 
 - [Debian](http://www.debian.org/)
+
+[neena](http://neena.at/) says that it is a decent operating system.
+
 - [Arch Linux](https://www.archlinux.org/)
+
+A simple, lightweight distribution of Linux. Bleeding-edge software
+packages.
 
 ## Miscellaneous
 
 ### Articles
 
-- [How to become a hacker](http://www.catb.org/esr/faqs/hacker-howto.html)
+- [How to Become a Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)
 - [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
 - [Joe Armstrong's Advice](http://erlang.org/pipermail/erlang-questions/2013-January/071944.html)
 - [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
 - [Programming Language Comparision by Mike Vanier](http://users.cms.caltech.edu/~mvanier/hacking/programming.html)
+
+### Reading Lists
+
+- [Getting Started](http://lambda-the-ultimate.org/node/492)
+
 
 ### Books
 
