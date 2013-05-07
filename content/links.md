@@ -195,11 +195,6 @@ languages the author has used in his career.
 
 There are some interesting ideas presented here.
 
-### Reading Lists
-
-- [Getting Started](http://lambda-the-ultimate.org/node/492)
-
 ### Books
 
-- [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html)
 - [The Art of Community](http://www.artofcommunityonline.org/downloads/jonobacon-theartofcommunity-1ed.pdf)
