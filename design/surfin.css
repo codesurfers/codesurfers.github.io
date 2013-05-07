@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lucida Console', Monaco, monospace;
+    font-family: 'Consolas', 'Inconsolata', 'Monaco', 'Droid Sans Mono', 'DejaVu Sans Mono';
     color: powderblue;
     background-color: darkslategray;
 }
@@ -24,4 +24,9 @@ body {
     top: 30px;
     left: 0px;
     padding-left: 5px;
+}
+
+#content p {
+    width: 45%;
+    margin-left: 30px;
 }
