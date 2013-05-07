@@ -10,6 +10,14 @@ body {
     color: #d2c645;
 }
 
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
 #navigation {
     position: absolute;
     left: 0px;
