@@ -86,6 +86,10 @@ extended in trivial and extremely non-trivial ways with Emacs Lisp.
 
 A feature-laden, easy to use text editor.
 
+- [LightTable](http://www.lighttable.com/)
+
+A new interactive IDE.
+
 ### Version Control
 
 A Version Control System (VCS) is used to track changes in files. It
@@ -93,12 +97,13 @@ also makes distributed collaborative development possible.
 
 - [Mercurial](http://hginit.com/01.html)
 
-Supposedly easier to learn than Git. This tutorial covers the basics
-of version control using Mercurial.
+Mercurial is supposedly easier to learn and use when compared to
+Git. This tutorial covers the basics of version control using
+Mercurial.
 
 - [Pro Git](http://git-scm.com/book)
 
-A good introduction to the powerful Git version control system.
+A solid introduction to the powerful Git version control system.
 
 ### Command-line
 
@@ -110,8 +115,9 @@ A shell with nice completions.
 
 #### Tiling
 
-Tiling window managers are useful when a lot of different programs are
-being run e.g. in a typical programming session.
+Tiling window managers are useful in a typical programming session
+when you have to repeatedly switch between your text-editor, terminal
+emulator, web-browser, and any other programs you may have running.
 
 - [xmonad](http://xmonad.org/)
 
@@ -128,7 +134,7 @@ The best open source SVG editor there is.
 
 - [Pandoc](http://johnmacfarlane.net/pandoc/index.html)
 
-Easily converts between markup formats.
+Easily converts between a great variety of markup formats.
 
 ## References
 
