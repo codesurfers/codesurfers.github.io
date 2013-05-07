@@ -188,6 +188,8 @@ Check out his other articles, as well.
 
 - [Joe Armstrong's Advice](http://erlang.org/pipermail/erlang-questions/2013-January/071944.html)
 
+Joe Armstrong's recommendations as to what might be worth learning.
+
 - [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
 
 It's a good idea to read this before asking questions on the internet (and in real life).
