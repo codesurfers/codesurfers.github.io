@@ -4,7 +4,7 @@
 
 ### Tutorials
 
-If you are new to programming, it might be better to read
+If you are new to programming, read
 [SICP](http://mitpress.mit.edu/sicp/full-text/book/book.html) or the
 [Python Tutorial](http://docs.python.org/3/tutorial/) first.
 
@@ -32,7 +32,7 @@ Nice tutorial that will get you up to speed with basic programming.
 - [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
 A practical introduction to Common Lisp.
- 
+
 - [LLVM Tutorial](http://llvm.org/docs/tutorial/index.html)
 
 ### Newer programming languages
@@ -91,8 +91,14 @@ A feature-laden, easy to use text editor.
 A Version Control System (VCS) is used to track changes in files. It
 also makes distributed collaborative development possible.
 
-- [Pro Git](http://git-scm.com/book)
 - [Mercurial](http://hginit.com/01.html)
+
+Supposedly easier to learn than Git. This tutorial covers the basics
+of version control using Mercurial.
+
+- [Pro Git](http://git-scm.com/book)
+
+A good introduction to the powerful Git version control system.
 
 ### Command-line
 
@@ -116,7 +122,7 @@ One of the more widely used Haskell programs.
 ### Graphics
 - [Inkscape](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/)
 
-A nice editor for creating vector graphics.
+The best open source SVG editor there is.
 
 ### Miscellaneous
 
@@ -141,9 +147,8 @@ Freely available specifications for various internet-related protocols.
 
 - [Project Euler](http://projecteuler.net/)
 
-Lots of problems which require you to write programs to solve
-them. Quite a few of these problems require some mathematical
-knowledge.
+Lots of problems which require the use of programs to solve them. Many
+of these problems require some mathematical knowledge.
 
 - [Programming Praxis](http://programmingpraxis.com/)
 
@@ -154,27 +159,45 @@ problems found at [Project Euler](http://projecteuler.net/)
 
 - [Debian](http://www.debian.org/)
 
-[neena](http://neena.at/) says that it is a decent operating system.
+[neena](http://neena.at/) says that it is a decent operating system. A
+widely used, stable Linux distribution.
 
 - [Arch Linux](https://www.archlinux.org/)
 
-A simple, lightweight distribution of Linux. Bleeding-edge software
-packages.
+A Linux distribution with an emphasis on simplicity, configurability
+and having the latest software packages. Rolling releases keep your
+system at the bleeding edge.
 
 ## Miscellaneous
 
 ### Articles
 
 - [How to Become a Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)
+
+Read it.
+
 - [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
+
+Check out his other articles, as well.
+
 - [Joe Armstrong's Advice](http://erlang.org/pipermail/erlang-questions/2013-January/071944.html)
+
 - [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
+
+It's a good idea to read this before asking questions on the internet (and in real life).
+
 - [Programming Language Comparision by Mike Vanier](http://users.cms.caltech.edu/~mvanier/hacking/programming.html)
+
+Slightly dated, but still a good comparison between the various
+languages the author has used in his career.
+
+- [Paul Graham's Articles](http://paulgraham.com/articles.html)
+
+There are some interesting ideas presented here.
 
 ### Reading Lists
 
 - [Getting Started](http://lambda-the-ultimate.org/node/492)
-
 
 ### Books
 
