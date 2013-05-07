@@ -1,6 +1,7 @@
 body {
     font-family: 'Consolas', 'Inconsolata', 'Monaco', 'Droid Sans Mono', 'DejaVu Sans Mono';
     color: powderblue;
+    font-size: 25px;
     background-color: darkslategray;
 }
 
@@ -14,7 +15,6 @@ body {
     left: 0px;
     top: 0px;
     right: 0px;
-    height: 20px;
     padding-left: 5px;
     background-color: #1f3333;
 }
@@ -26,7 +26,19 @@ body {
     padding-left: 5px;
 }
 
+#content ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#content ul li {
+    list-style-type: none;
+}
+
 #content p {
     width: 45%;
-    margin-left: 30px;
+}
+
+#links p {
+    margin-left: 25px;
 }
