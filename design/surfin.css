@@ -5,7 +5,7 @@ body {
     background-color: darkslategray;
 }
 
-:link, :visited, :hover, :active {
+body :link, :visited, :hover, :active {
     text-decoration: none;
     color: #d2c645;
 }
