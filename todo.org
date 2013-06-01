@@ -1,3 +1,2 @@
-* Fix colours
-  Possible colours: http://color.hailpixel.com/#9FBCDF,264973,162341,B6CCE7
-* Create template
+* New theme
+* Use a static site generator
