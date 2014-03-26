@@ -1,53 +1,8 @@
 body {
     font-family: 'Consolas', 'Inconsolata', 'Monaco', 'Droid Sans Mono', 'DejaVu Sans Mono';
-    color: powderblue;
     font-size: 25px;
-    background-color: darkslategray;
 }
 
 body :link, :visited, :hover, :active {
     text-decoration: none;
-    color: #d2c645;
-}
-
-h2 {
-    margin-top: 50px;
-}
-
-h3 {
-    margin-top: 40px;
-}
-
-#navigation {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    padding-left: 5px;
-    background-color: #1f3333;
-}
-
-#content {
-    position: absolute;
-    width: 90%;
-    top: 30px;
-    left: 0px;
-    padding-left: 5px;
-}
-
-#content ul {
-    margin-left: 0px;
-    padding-left: 0px;
-}
-
-#content ul li {
-    list-style-type: none;
-}
-
-#content p {
-    width: 45%;
-}
-
-#links p {
-    margin-left: 25px;
 }
