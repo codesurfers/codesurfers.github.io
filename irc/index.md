@@ -3,9 +3,7 @@ layout: default
 title: codesurfers.net
 ---
 
-#codesurfers
-
-#codesurfers is an IRC channel on the OFTC network.
+`#codesurfers` is an IRC channel on the OFTC network.
 
 We like programming and use free software.
 
