@@ -16,18 +16,22 @@ programming experience will help you to move through the material
 presented here at a faster pace.
 
 - [pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
+
 A comprehensive, categorised collection of Python Resources.
 
 - [The C Programming Language](http://cm.bell-labs.com/cm/cs/cbook/)
+
 An excellent way to learn C, a widely used, influential
 programming language.
 
 - [Programming Abstractions in C++](http://www-cs-faculty.stanford.edu/%7Eeroberts//CS106BX-Reader.pdf)
+
 A good way to effectively use the ubiquitous C++
 programming language. Stop writing C-like C++! When
 appropriate, take advantage of what C++ has to offer.
 
 - [Eloquent Javascript](http://eloquentjavascript.net/contents.html)
+
 A modern introduction to web development using Javascript.
 
 - [Structure and Interpretation of Computer Programs
@@ -38,40 +42,49 @@ programming. [Racket](http://racket-lang.org/) is a good choice for
 running the example code and doing the exercises from the book.
 
 - [Learn you a Haskell for great good](http://learnyouahaskell.com/chapters)
+
 A nicely illustrated book on functional programming in
 Haskell.
 
 - [Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
+
 [gsathya](http://gsathya.in/) refuses to suggest a suitable description for this
 tutorial.
 
 - [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+
 An introduction to Common Lisp describing the construction
 of practical, real world programs.
 
 - [Real World OCaml](https://realworldocaml.org/)
+
 A book about OCaml, a fast, functional programming
 language used in research and industry.
 
 - [Beej's Guide to Network Programming Using Internet
   Sockets](http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html)
+
 A humorous guide to get started with network programming.
 
 ### Newer programming languages
 
 - [Rust](http://www.rust-lang.org/) 
+
 A systems programming language developed by Mozilla.
 
 - [Shen](http://www.shenlanguage.org/)
+
 A new Lisp. Shen draws inspiration from functional programming, type
 theory and the ancient Lisp tradition.
 
 ### Programming Language Theory
 
 - [Lambda the Ultimate](http://lambda-the-ultimate.org/)
+
 A blog and community for programming language enthusiasts.
 
 - [Oleg Kiselyov's site](http://okmij.org/ftp/)
+
 Pro research.
 
 ## Design
@@ -99,6 +112,7 @@ Learn how to float and position element using CSS and
 avoid some sources of frustrating confusion.
 
 - [Markdown](http://daringfireball.net/projects/markdown/syntax)
+
 Markdown is a (plaintext) writing format that is widely
 used. Writing Markdown reduces the amount of HTML you have
 to hand-write. Markdown parsers/converters are widely
@@ -127,10 +141,10 @@ with your program. It's usually used to debug C/C++
 programs.
 
 - [ccache](https://ccache.samba.org/)
+
 Building large projects can take a significant amount of
 time. ccache can help with reducing the time spent
 waiting for the build to finish.
-
 
 ### Text editors
 
@@ -222,9 +236,10 @@ A commonly used tiling window manager written in Haskell.
 
 - [awesome](http://awesome.naquadah.org/)
 
-Another decent tiling window manager.n
+Another decent tiling window manager.
 
 ### Graphics
+
 - [Inkscape](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/)
 
 The best open source SVG editor there is.  Also allows importing from,
@@ -255,17 +270,21 @@ Another reference on C++. It has clear examples to help
 you learn how to use the standard library.
 
 - [C++ FAQ](http://www.parashift.com/c++-faq/)
+
 Fairly large collection of C++ FAQs and their answers.
 
 - [C++ FQA](http://www.yosefk.com/c++fqa/index.html)
+
 C++ Frequently Questioned Answers.
 
 - [Official C++ FAQ](http://isocpp.org/wiki/faq)
 
 - [Simplified Common Lisp Reference](http://jtra.cz/stuff/lisp/sclr/index.html)
+
 A selection of commonly used symbols.
 
 - [ Common Lisp HyperSpec™ ](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
+
 The entire ANSI CL standard in HTML. Rather readable.
 
 ### Protocols, Specifications
@@ -341,10 +360,12 @@ There are some interesting ideas presented here.
 ### Books
 
 - [The Art of Community](http://www.artofcommunityonline.org/downloads/jonobacon-theartofcommunity-1ed.pdf)
+
 A book on how to build and sustain a community.
 
 ### Lists
 
 - [List of Free Programming Books](http://resrc.io/list/10/list-of-free-programming-books/)
+
 A massive collection of links to freely available books of
 interest to programmers.
