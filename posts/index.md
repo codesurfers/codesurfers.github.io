@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default
 title: articles
 ---
+
+## Articles
 
 <ul>
   {% for post in site.posts %}
