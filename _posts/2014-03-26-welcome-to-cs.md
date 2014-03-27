@@ -5,9 +5,8 @@ date:   2014-03-26
 categories:
 ---
 
-Welcome to codesurfers.
-
-We hope to publish possibly useful and/or interesting content here soon.
+We hope to publish possibly useful and/or interesting content here
+soon.
 
 This is some sample code for the FizzBuzz problem.
 

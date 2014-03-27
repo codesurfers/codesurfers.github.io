@@ -9,81 +9,81 @@ title: links
 
 ### Tutorials
 
-- [The Python Tutorial](http://docs.python.org/3/tutorial/)
+[The Python Tutorial](http://docs.python.org/3/tutorial/)
 
 The official tutorial for programming in Python. Having some
 programming experience will help you to move through the material
 presented here at a faster pace.
 
-- [pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
+[pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
 
 A comprehensive, categorised collection of Python Resources.
 
-- [The C Programming Language](http://cm.bell-labs.com/cm/cs/cbook/)
+[The C Programming Language](http://cm.bell-labs.com/cm/cs/cbook/)
 
 An excellent way to learn C, a widely used, influential
 programming language.
 
-- [Programming Abstractions in C++](http://www-cs-faculty.stanford.edu/%7Eeroberts//CS106BX-Reader.pdf)
+[Programming Abstractions in C++](http://www-cs-faculty.stanford.edu/%7Eeroberts//CS106BX-Reader.pdf)
 
 A good way to effectively use the ubiquitous C++
 programming language. Stop writing C-like C++! When
 appropriate, take advantage of what C++ has to offer.
 
-- [Eloquent Javascript](http://eloquentjavascript.net/contents.html)
+[Eloquent Javascript](http://eloquentjavascript.net/contents.html)
 
 A modern introduction to web development using Javascript.
 
-- [Structure and Interpretation of Computer Programs
+[Structure and Interpretation of Computer Programs
   (SICP)](http://mitpress.mit.edu/sicp/full-text/book/book.html)
 
 An introduction to computation and
 programming. [Racket](http://racket-lang.org/) is a good choice for
 running the example code and doing the exercises from the book.
 
-- [Learn you a Haskell for great good](http://learnyouahaskell.com/chapters)
+[Learn you a Haskell for great good](http://learnyouahaskell.com/chapters)
 
 A nicely illustrated book on functional programming in
 Haskell.
 
-- [Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
+[Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
 
 [gsathya](http://gsathya.in/) refuses to suggest a suitable description for this
 tutorial.
 
-- [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+[Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
 An introduction to Common Lisp describing the construction
 of practical, real world programs.
 
-- [Real World OCaml](https://realworldocaml.org/)
+[Real World OCaml](https://realworldocaml.org/)
 
 A book about OCaml, a fast, functional programming
 language used in research and industry.
 
-- [Beej's Guide to Network Programming Using Internet
+[Beej's Guide to Network Programming Using Internet
   Sockets](http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html)
 
 A humorous guide to get started with network programming.
 
 ### Newer programming languages
 
-- [Rust](http://www.rust-lang.org/) 
+[Rust](http://www.rust-lang.org/) 
 
 A systems programming language developed by Mozilla.
 
-- [Shen](http://www.shenlanguage.org/)
+[Shen](http://www.shenlanguage.org/)
 
 A new Lisp. Shen draws inspiration from functional programming, type
 theory and the ancient Lisp tradition.
 
 ### Programming Language Theory
 
-- [Lambda the Ultimate](http://lambda-the-ultimate.org/)
+[Lambda the Ultimate](http://lambda-the-ultimate.org/)
 
 A blog and community for programming language enthusiasts.
 
-- [Oleg Kiselyov's site](http://okmij.org/ftp/)
+[Oleg Kiselyov's site](http://okmij.org/ftp/)
 
 Pro research.
 
@@ -105,13 +105,13 @@ latest drafts to know what the future standards are
 (probably) going to be like.
 
 
-- [CSS Positioning](http://alistapart.com/article/css-positioning-101)
-- [CSS Floats](http://alistapart.com/article/css-floats-101)
+[CSS Positioning](http://alistapart.com/article/css-positioning-101)
+[CSS Floats](http://alistapart.com/article/css-floats-101)
 
 Learn how to float and position element using CSS and
 avoid some sources of frustrating confusion.
 
-- [Markdown](http://daringfireball.net/projects/markdown/syntax)
+[Markdown](http://daringfireball.net/projects/markdown/syntax)
 
 Markdown is a (plaintext) writing format that is widely
 used. Writing Markdown reduces the amount of HTML you have
@@ -122,9 +122,9 @@ You could write content in Markdown and use something like
 [jekyll](http://jekyllrb.com/) to generate the static html webpages of
 your site/blog.
 
-- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference?redirect=no)
-- [JavaScript Guide](https://developer.mozilla.org/en-US/docs/JavaScript/Guide)
-- [JavaScript Garden](http://bonsaiden.github.com/JavaScript-Garden/)
+[MDN CSS Reference](https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference?redirect=no)
+[JavaScript Guide](https://developer.mozilla.org/en-US/docs/JavaScript/Guide)
+[JavaScript Garden](http://bonsaiden.github.com/JavaScript-Garden/)
 
 ## Tools
 
@@ -134,13 +134,13 @@ You will have to be familiar with the development tools like
 the compiler/interpreter and debugger because you'll be
 spending a sizeable amount of your time working with them.
 
-- [gdb](https://www.gnu.org/software/gdb/)
+[gdb](https://www.gnu.org/software/gdb/)
 
 The GNU Debugger can help with finding what's going wrong
 with your program. It's usually used to debug C/C++
 programs.
 
-- [ccache](https://ccache.samba.org/)
+[ccache](https://ccache.samba.org/)
 
 Building large projects can take a significant amount of
 time. ccache can help with reducing the time spent
@@ -154,14 +154,14 @@ secondary skills of any programmer.
 Among the free text editors, vim and emacs have (unfortunately) been
 the state of the art for quite some time now.
 
-- [Vim](http://www.vim.org/others.php)
+[Vim](http://www.vim.org/others.php)
 
 A modal text editor that has nice key bindings and an
 emphasis on speed. It is an important command-line
 survival skill. Once installed, run the "vimtutor" command
 to start a basic tutorial.
 
-- [Emacs](http://www.gnu.org/software/emacs/tour/)
+[Emacs](http://www.gnu.org/software/emacs/tour/)
 
 An operating system containing (amongst many, many other things) a
 file manager, calculator, games, package manager and even a text
@@ -170,11 +170,11 @@ editor.
 It can be extended in trivial, and extremely non-trivial ways with
 Emacs Lisp, which also happens to be the language it is written in.
 
-- [Notepad++](http://www.notepad-plus-plus.org/)
+[Notepad++](http://www.notepad-plus-plus.org/)
 
 An easy to use, feature-laden text editor.
 
-- [LightTable](http://www.lighttable.com/)
+[LightTable](http://www.lighttable.com/)
 
 A new interactive IDE.
 
@@ -187,13 +187,13 @@ to use the VCS a project is versioned with, if you want to
 contribute to it.
 
 
-- [Mercurial](http://hginit.com/01.html)
+[Mercurial](http://hginit.com/01.html)
 
 Mercurial is supposedly easier to learn and use when compared to
 Git. This tutorial covers the fundamental idea behind version control
 and basic usage of Mercurial.
 
-- [Pro Git](http://git-scm.com/book)
+[Pro Git](http://git-scm.com/book)
 
 A solid introduction to the powerful Git version control system.
 
@@ -202,17 +202,17 @@ A solid introduction to the powerful Git version control system.
 Mastering the command line shell gives you unfathomable power and more
 importantly nerd cred. ;-)
 
-- [zsh](https://wiki.archlinux.org/index.php/Zsh)
+[zsh](https://wiki.archlinux.org/index.php/Zsh)
 
 A shell with nice completions and other customisable features.
 
-- [tmux](http://tmux.sourceforge.net/)
+[tmux](http://tmux.sourceforge.net/)
 
 Switching between multiple terminal emulator instances can
 hamper productivity. This terminal multiplexer can be used
 with a tiling window manager for a killer combination.
 
-- [GNU coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities)
+[GNU coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities)
 
 The GNU coreutils bundled with GNU/Linux can be used to
 perform straighforward tasks, and also arcane
@@ -230,24 +230,24 @@ when you have to repeatedly switch between your text-editor, terminal
 emulator, web-browser, and any number of other programs you may have
 running. Alt-Tab never again!
 
-- [xmonad](http://xmonad.org/)
+[xmonad](http://xmonad.org/)
 
 A commonly used tiling window manager written in Haskell.
 
-- [awesome](http://awesome.naquadah.org/)
+[awesome](http://awesome.naquadah.org/)
 
 Another decent tiling window manager.
 
 ### Graphics
 
-- [Inkscape](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/)
+[Inkscape](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/)
 
 The best open source SVG editor there is.  Also allows importing from,
 exporting to the commonly used graphical formats.
 
 ### Miscellaneous
 
-- [Pandoc](http://johnmacfarlane.net/pandoc/index.html)
+[Pandoc](http://johnmacfarlane.net/pandoc/index.html)
 
 Easily converts between a great variety of markup formats.
 
@@ -259,49 +259,49 @@ with time they become indispensable.
 
 ### Language References
 
-- [C++ Reference](http://en.cppreference.com/w/)
+[C++ Reference](http://en.cppreference.com/w/)
 
 Handy quick reference while writing C++ code. It can be
 downloaded for offline use.
 
-- [C++ Reference](http://www.cplusplus.com/reference/)
+[C++ Reference](http://www.cplusplus.com/reference/)
 
 Another reference on C++. It has clear examples to help
 you learn how to use the standard library.
 
-- [C++ FAQ](http://www.parashift.com/c++-faq/)
+[C++ FAQ](http://www.parashift.com/c++-faq/)
 
 Fairly large collection of C++ FAQs and their answers.
 
-- [C++ FQA](http://www.yosefk.com/c++fqa/index.html)
+[C++ FQA](http://www.yosefk.com/c++fqa/index.html)
 
 C++ Frequently Questioned Answers.
 
-- [Official C++ FAQ](http://isocpp.org/wiki/faq)
+[Official C++ FAQ](http://isocpp.org/wiki/faq)
 
-- [Simplified Common Lisp Reference](http://jtra.cz/stuff/lisp/sclr/index.html)
+[Simplified Common Lisp Reference](http://jtra.cz/stuff/lisp/sclr/index.html)
 
 A selection of commonly used symbols.
 
-- [ Common Lisp HyperSpec™ ](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
+[ Common Lisp HyperSpec™ ](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
 
 The entire ANSI CL standard in HTML. Rather readable.
 
 ### Protocols, Specifications
 
-- [RFC](http://www.rfc-editor.org/rfc-index2.html)
+[RFC](http://www.rfc-editor.org/rfc-index2.html)
 
 Freely available specifications for various internet-related protocols.
 
 ## Programming Exercises
 
-- [Project Euler](http://projecteuler.net/)
+[Project Euler](http://projecteuler.net/)
 
 A good source of many exercise problems. Many of the
 problems here require some mathematical (and programming)
 knowledge.
 
-- [Programming Praxis](http://programmingpraxis.com/)
+[Programming Praxis](http://programmingpraxis.com/)
 
 Some practical programming problems in addition to the sorts of
 problems found at [Project Euler](http://projecteuler.net/)
@@ -312,12 +312,12 @@ Any operating system that you are productive in, and happy
 with, is fine. If that is not the case, however, these are
 some of our recommendations.
 
-- [Debian](http://www.debian.org/)
+[Debian](http://www.debian.org/)
 
 [neena](http://neena.at/) says that it is a decent operating system. A
 widely used, stable Linux distribution.
 
-- [Arch Linux](https://www.archlinux.org/)
+[Arch Linux](https://www.archlinux.org/)
 
 A Linux distribution with an emphasis on simplicity, configurability
 and having the latest software packages. Rolling releases keep your
@@ -327,45 +327,45 @@ system at the bleeding edge.
 
 ### Articles
 
-- [How to Become a Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)
+[How to Become a Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)
 
 Just read it.
 
-- [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
+[Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
 
 Check out his other articles, as well.
 
-- [Joe Armstrong's Advice](http://erlang.org/pipermail/erlang-questions/2013-January/071944.html)
+[Joe Armstrong's Advice](http://erlang.org/pipermail/erlang-questions/2013-January/071944.html)
 
 Joe Armstrong's recommendations as to what might be worth learning.
 
-- [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
+[How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
 
 It's a good idea to read this before asking questions on the internet (and in real life).
 
-- [You and Your Research](http://www.cs.virginia.edu/%7Erobins/YouAndYourResearch.html)
+[You and Your Research](http://www.cs.virginia.edu/%7Erobins/YouAndYourResearch.html)
 
 Fascinating insights into the life experiences of a
 scientist, and his colleagues.
 
-- [Programming Language Comparison by Mike Vanier](http://users.cms.caltech.edu/~mvanier/hacking/programming.html)
+[Programming Language Comparison by Mike Vanier](http://users.cms.caltech.edu/~mvanier/hacking/programming.html)
 
 Slightly dated, but still a good comparison between the various
 languages the author has used in his career.
 
-- [Paul Graham's Articles](http://paulgraham.com/articles.html)
+[Paul Graham's Articles](http://paulgraham.com/articles.html)
 
 There are some interesting ideas presented here.
 
 ### Books
 
-- [The Art of Community](http://www.artofcommunityonline.org/downloads/jonobacon-theartofcommunity-1ed.pdf)
+[The Art of Community](http://www.artofcommunityonline.org/downloads/jonobacon-theartofcommunity-1ed.pdf)
 
 A book on how to build and sustain a community.
 
 ### Lists
 
-- [List of Free Programming Books](http://resrc.io/list/10/list-of-free-programming-books/)
+[List of Free Programming Books](http://resrc.io/list/10/list-of-free-programming-books/)
 
 A massive collection of links to freely available books of
 interest to programmers.
