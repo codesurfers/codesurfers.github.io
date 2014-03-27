@@ -1,6 +1,6 @@
 ---
 layout: default
-title: codesurfers.net
+title: the codesurfers network
 ---
 
 We code, but we cannot surf.

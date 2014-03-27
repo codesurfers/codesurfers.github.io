@@ -1,7 +1,9 @@
 ---
 layout: default
-title: codesurfers.net
+title: irc
 ---
+
+# IRC
 
 `#codesurfers` is an IRC channel on the OFTC network.
 
