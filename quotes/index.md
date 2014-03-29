@@ -3,9 +3,7 @@ layout: article
 title: quotes
 ---
 
-# Quotes
-
-## Free Software
+#### Free Software
 
 Free software is the world's most advanced technical education
 system. It allows anybody, anywhere in the world, to get to the state

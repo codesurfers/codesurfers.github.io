@@ -3,8 +3,6 @@ layout: article
 title: irc
 ---
 
-# IRC
-
 `#codesurfers` is an IRC channel on the OFTC network.
 
 We like programming and use free software.

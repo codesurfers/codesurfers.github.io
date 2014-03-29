@@ -3,8 +3,6 @@ layout: article
 title: articles
 ---
 
-## Articles
-
 <ul>
   {% for post in site.posts %}
     <li>
