@@ -3,8 +3,6 @@ layout: article
 title: links
 ---
 
-# Links
-
 ## Programming
 
 ### Tutorials
