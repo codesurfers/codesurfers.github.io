@@ -174,7 +174,7 @@ An easy to use, feature-laden text editor.
 
 [LightTable](http://www.lighttable.com/)
 
-A new interactive IDE.
+An interactive IDE written in ClojureScript.
 
 ### Version Control
 
