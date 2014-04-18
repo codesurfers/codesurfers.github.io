@@ -249,13 +249,22 @@ exporting to the commonly used graphical formats.
 
 Easily converts between a great variety of markup formats.
 
+## CS Theory
+
+### Algorithms
+
+[Big-O Cheatsheet](http://bigocheatsheet.com/)
+
+A handy cheatsheet of algorithmic complexities associated with
+commonly used data structures and algorithms.
+
 ## References
 
 Learning to use references is one of the essential skills of a
 programmer. References are by necessity large and intimidating, but
 with time they become indispensable.
 
-### Language References
+### Programming Language References
 
 [C++ Reference](http://en.cppreference.com/w/)
 
