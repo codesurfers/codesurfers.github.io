@@ -5,7 +5,7 @@ title: links
 
 ## Programming
 
-### Tutorials
+### Basic Tutorials
 
 [The Python Tutorial](http://docs.python.org/3/tutorial/)
 
@@ -13,24 +13,10 @@ The official tutorial for programming in Python. Having some
 programming experience will help you to move through the material
 presented here at a faster pace.
 
-[pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
-
-A comprehensive, categorised collection of Python Resources.
-
 [The C Programming Language](http://cm.bell-labs.com/cm/cs/cbook/)
 
 An excellent way to learn C, a widely used, influential
 programming language.
-
-[Programming Abstractions in C++](http://www-cs-faculty.stanford.edu/%7Eeroberts//CS106BX-Reader.pdf)
-
-A good way to effectively use the ubiquitous C++
-programming language. Stop writing C-like C++! When
-appropriate, take advantage of what C++ has to offer.
-
-[Eloquent Javascript](http://eloquentjavascript.net/contents.html)
-
-A modern introduction to web development using Javascript.
 
 [Structure and Interpretation of Computer Programs
   (SICP)](http://mitpress.mit.edu/sicp/full-text/book/book.html)
@@ -39,32 +25,62 @@ An introduction to computation and
 programming. [Racket](http://racket-lang.org/) is a good choice for
 running the example code and doing the exercises from the book.
 
+### Language Specific Resources
+
+#### C/C++
+
+[Programming Abstractions in C++](http://www-cs-faculty.stanford.edu/%7Eeroberts//CS106BX-Reader.pdf)
+
+A good way to effectively use the ubiquitous C++
+programming language. Stop writing C-like C++! When
+appropriate, take advantage of what C++ has to offer.
+
+#### JavaScript
+
+[Eloquent JavaScript](http://eloquentjavascript.net/contents.html)
+
+A modern introduction to web development using JavaScript.
+
+
+#### Python
+
+[pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
+
+A comprehensive, categorised collection of Python Resources.
+
+
+#### Haskell
+
 [Learn you a Haskell for great good](http://learnyouahaskell.com/chapters)
 
 A nicely illustrated book on functional programming in
 Haskell.
 
-[Why's poignant guide to Ruby](http://mislav.uniqpath.com/poignant-guide/)
+[Learning Haskell](http://www.haskell.org/haskellwiki/Learning_Haskell)
 
-[gsathya](http://gsathya.in/) refuses to suggest a suitable description for this
-tutorial.
+[What I Wish I Knew When Learning Haskell 2.0](http://dev.stephendiehl.com/hask/)
 
-[Practical Common Lisp](http://www.gigamonkeys.com/book/)
+[A Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
-An introduction to Common Lisp describing the construction
-of practical, real world programs.
+#### OCaml
 
 [Real World OCaml](https://realworldocaml.org/)
 
 A book about OCaml, a fast, functional programming
 language used in research and industry.
 
-[Beej's Guide to Network Programming Using Internet
-  Sockets](http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html)
+#### Lisp
 
-A humorous guide to get started with network programming.
+[Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
-### Newer programming languages
+An introduction to Common Lisp describing the construction
+of practical, real world programs.
+
+[Articulate Common Lisp](http://articulate-lisp.com/)
+
+A collection of CL resources.
+
+#### Newer programming languages
 
 [Rust](http://www.rust-lang.org/) 
 
@@ -84,6 +100,13 @@ A blog and community for programming language enthusiasts.
 [Oleg Kiselyov's site](http://okmij.org/ftp/)
 
 Pro research.
+
+### Networks
+
+[Beej's Guide to Network Programming Using Internet
+  Sockets](http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html)
+
+A humorous guide to get started with network programming.
 
 ## Design
 
@@ -365,6 +388,8 @@ languages the author has used in his career.
 There are some interesting ideas presented here.
 
 ### Books
+
+#### Misc
 
 [The Art of Community](http://www.artofcommunityonline.org/downloads/jonobacon-theartofcommunity-1ed.pdf)
 
