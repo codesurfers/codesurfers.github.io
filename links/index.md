@@ -108,6 +108,22 @@ Pro research.
 
 A humorous guide to get started with network programming.
 
+## CS
+
+### Things to learn
+
+[What every computer science major should
+know](http://matt.might.net/articles/what-cs-majors-should-know/)
+
+Matt Might's advice on obtaining the essential education any student
+of CS ought to know.
+
+## Hiring/Interviews
+
+[Alex Bowe's interview prep advice](http://alexbowe.com/failing-at-google-interviews/)
+
+[Steve Yegge's interview prep advice](http://steve-yegge.blogspot.in/2008/03/get-that-job-at-google.html)
+
 ## Design
 
 ### Web
