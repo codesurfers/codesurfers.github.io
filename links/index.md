@@ -133,6 +133,7 @@ taste and patience. There are an abundance of HTML tutorials
 on the web.
 
 [HTML Standard](http://www.w3.org/html/wg/drafts/html/master/)
+
 [Modularised CSS Specifications](http://dev.w3.org/csswg/)
 
 The latest drafts of the HTML and CSS specifications. The
@@ -143,6 +144,7 @@ latest drafts to know what the future standards are
 
 
 [CSS Positioning](http://alistapart.com/article/css-positioning-101)
+
 [CSS Floats](http://alistapart.com/article/css-floats-101)
 
 Learn how to float and position element using CSS and
@@ -160,7 +162,9 @@ You could write content in Markdown and use something like
 your site/blog.
 
 [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference?redirect=no)
+
 [JavaScript Guide](https://developer.mozilla.org/en-US/docs/JavaScript/Guide)
+
 [JavaScript Garden](http://bonsaiden.github.com/JavaScript-Garden/)
 
 ## Tools
@@ -329,7 +333,7 @@ C++ Frequently Questioned Answers.
 
 A selection of commonly used symbols.
 
-[ Common Lisp HyperSpec™ ](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
+[Common Lisp HyperSpec™ ](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
 
 The entire ANSI CL standard in HTML. Rather readable.
 
@@ -350,7 +354,11 @@ knowledge.
 [Programming Praxis](http://programmingpraxis.com/)
 
 Some practical programming problems in addition to the sorts of
-problems found at [Project Euler](http://projecteuler.net/)
+problems found at [Project Euler](http://projecteuler.net/).
+
+[codesurfers exercises](../exercises/)
+
+Other assorted exercises.
 
 ## Operating Systems
 
