@@ -9,6 +9,12 @@ Enlightenment is probably antithetical to impatience.
 
 Eric Naggum
 
+People who want to learn are, however, always welcome.  People who
+respect knowledge, know what it costs to acquire it.  People who do
+not know its costs will generally not respect it, either.
+
+Eric Naggum
+
 
 #### Free Software
 
