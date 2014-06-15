@@ -5,10 +5,9 @@ date:   2014-03-26
 categories:
 ---
 
-We hope to publish possibly useful and/or interesting content here
-soon.
+We hope to publish possibly useful and/or interesting content here.
 
-This is some sample code for the FizzBuzz problem.
+This is the code for the FizzBuzz problem.
 
 ```lisp
 

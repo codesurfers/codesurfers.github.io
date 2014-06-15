@@ -358,7 +358,7 @@ problems found at [Project Euler](http://projecteuler.net/).
 
 [codesurfers exercises](../exercises/)
 
-Other assorted exercises.
+Assorted exercises collected by us.
 
 ## Operating Systems
 
