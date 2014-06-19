@@ -15,7 +15,6 @@ not know its costs will generally not respect it, either.
 
 Eric Naggum
 
-
 #### Free Software
 
 Free software is the world's most advanced technical education
