@@ -5,7 +5,7 @@ body {
     background-color: darkslategray;
 }
 
-body :link, :visited, :active {
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #d2c645;
 }
@@ -18,7 +18,7 @@ h3 {
     margin-top: 40px;
 }
 
-#navigation {
+nav {
     position: absolute;
     left: 0px;
     top: 0px;
