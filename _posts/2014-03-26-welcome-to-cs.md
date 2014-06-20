@@ -10,9 +10,6 @@ We hope to publish possibly useful and/or interesting content here.
 This is the code for the FizzBuzz problem.
 
 ```lisp
-
-;;; Fizzbuzz in Common Lisp using the Optima pattern matching library
-
 (ql:quickload 'optima)
 
 (defpackage :fizzbuzz
