@@ -62,6 +62,8 @@ Haskell.
 
 [A Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
+[Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
+
 #### OCaml
 
 [Real World OCaml](https://realworldocaml.org/)
