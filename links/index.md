@@ -356,9 +356,9 @@ knowledge.
 Some practical programming problems in addition to the sorts of
 problems found at [Project Euler](http://projecteuler.net/).
 
-[codesurfers exercises](../exercises/)
+[Problem of the Day](http://www.problemotd.com/)
 
-Assorted exercises collected by us.
+Fun exercises.
 
 ## Operating Systems
 
