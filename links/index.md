@@ -37,6 +37,11 @@ appropriate, take advantage of what C++ has to offer.
 
 #### JavaScript
 
+
+[superhero.js](http://superherojs.com/)
+
+A colllection of JS resources.
+
 [Eloquent JavaScript](http://eloquentjavascript.net/contents.html)
 
 A modern introduction to web development using JavaScript.
