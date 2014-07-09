@@ -6,9 +6,9 @@ date:   2014-07-07
 categories:
 ---
 
-[gsathya](http://gsathya.in/) suggested that I try to do this problem
-on IRC, when I was looking for small problems to solve to get some
-programming practice.
+I was looking for small problems to solve to get some programming
+practice and [gsathya](http://gsathya.in/) suggested that I try
+solving this.
 
 I immediately started wondering about a good way to solve
 this. Something I recently read about UNIX tools came to mind. I
@@ -37,6 +37,8 @@ for line in file:
 
 finally return the hash_table
 ```
+
+The above pseudo-Python describes what we need to do.
 
 We need a way of getting the lines of the log file. The function
 `In_channel.read_lines` takes a filepath as an argument and returns a
@@ -79,7 +81,7 @@ what happens when we give it a list as an argument. This function
 normally expects a `List` and a function as an argument, but we're
 only giving it one.
 
-Supplying a function that takes n arguments with a different number of
+Supplying a function that takes `n` arguments with a different number of
 arguments is usually an error in other languages. Let's see how OCaml
 behaves:
 
