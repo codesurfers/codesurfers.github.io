@@ -287,7 +287,7 @@ up a quick implementation in Python, the distinctive feature of which
 is that he uses a _min-heap_ that only holds `k` elements. We can
 restrict the size of the min-heap to `k` elements, and then only
 insert elements into it if the current element is greater than the
-minimum. Eventually this min-heap of size `k` will hold the `k`
+minimum. Eventually, this min-heap of size `k` will hold the `k`
 largest elements, i.e. at the end of the operation it will hold the
 `kth` largest element as the top most element and all the other
 elements greater it.
@@ -344,7 +344,7 @@ what's happening from the inside out, i.e. from the innermost function
 call. Using the pipe operator we can comprehend the code more
 naturally from the outside in.
 
-We now have iterate over the remaining lines in the hash-table and if
+We have to iterate over the remaining lines in the hash-table and if
 we find a line that has a frequency greater than frequency of the top
 element in the min-heap, we remove the top element, and add a new tuple.
 
