@@ -21,11 +21,12 @@ problem.
 I thought this may be an educational problem to solve by writing a
 (non-shell) program to do the same thing.
 
-As soon as I see the word frequency, I start thinking whether using a
+As soon as I see the word "frequency", I start thinking whether using a
 hash-table is a viable option.
 
-We want to create a hash-table of the sort : `{ line : freq_of_occurence , ... }`
-which contains all the strings of the log file mapped to their frequency.
+A hash-table like `{ line : freq_of_occurence , ... }`
+can be used to contain all the strings of the log file mapped to their
+frequency.
 
 ```python
 for line in file:
@@ -42,49 +43,59 @@ We need a way of getting the lines of the log file. The function
 list of strings.
 
 The idiomatic way of iterating over collections in OCaml is by using
-its `iter` function.
+its `iter` function. We can use this to iterate over the list of
+strings returned by `In_channel.read_lines`.
+
+Let's inspect the type of `List.iter` in the REPL.
 
 ```ocaml
 utop[24]> List.iter ;;
 - : 'a list -> f:('a -> unit) -> unit = <fun>
 (*   ^-- (1)     ^---- (2)        ^--- (3) *)
 ```
-1. a list containing elements of type `'a`
+1. a list containing elements of type `'a`. In other words, a list
+   containing elements of any type.
+
 2. a function that takes an argument of type `'a`
-3. `unit` is represented `()` in code and can be thought of as something
-   like `void`.
+3. `unit` is represented as `()` in code and is like `void`.
 4. `->` means "returns".
 5. `f:` is just the label of the second argument.
 
-We shall use labeled arguments soon. Using labeled arguments we can
-change the order in which arguments are passed to the function.
-
 The above type signature means that `List.iter` is a function that
-takes a list containing elements of type `'a` and a function that takes
-an argument of type `'a` returning `unit`, and finally `List.iter`
-returns `unit`.
+takes two arguments: arg 1 is a list containing elements of type `'a`
+and arg 2 is a function that takes an argument of type `'a` returning
+`unit`. The `unit` on the extreme right is the return type of
+`List.iter`.
 
-Let us 'incrementally' figure out how to iterate over a list.
+Let us iteratively figure out how to iterate over a list.
 
 ```ocaml
 utop[30]> List.iter ;;
 - : 'a list -> f:('a -> unit) -> unit = <fun>
 ```
 
-By now, it should be clear what that type signature means. Let's see
-what happens when we give it a list as an argument. Normally,
-supplying a function that takes n arguments with a different number of
-arguments is an error in many languages. However, let's try it anyway.
+We know what that type signature means. Let's see
+what happens when we give it a list as an argument. This function
+normally expects a `List` and a function as an argument, but we're
+only giving it one.
+
+Supplying a function that takes n arguments with a different number of
+arguments is usually an error in other languages. Let's see how OCaml
+behaves:
 
 ```ocaml
 utop[29]> List.iter [1;2;3;4;5] ;;
 - : f:(int -> unit) -> unit = <fun>
 (*   ^----(1)           ^-- (2) *)
 ```
-1. a function that from `int` to `unit`.
+1. a function from `int` to `unit`.
 2. The final return value.
 
-Let's write a simple function that is from `int` to `unit`.
+[Currying](https://en.wikipedia.org/wiki/Currying) is what is
+happening here.
+
+Let's write a simple function that from `int` to `unit` that we could
+possibly use as the second argument.
 
 ```ocaml
 utop[34]> let print_integer x = printf "%d\n" x;;
@@ -95,8 +106,8 @@ utop[36]> print_integer 1337;;
 - : unit = ()
 ```
 
-Now, we'll use this function to print out all the elements of the
-list.
+We can use this function to print out all the elements of the list. We
+use `~f:` as the name of the label.
 
 ```ocaml
 utop[38]> List.iter [1;2;3;4;5] ~f:print_integer ;;
@@ -108,7 +119,7 @@ utop[38]> List.iter [1;2;3;4;5] ~f:print_integer ;;
 - : unit = ()
 ```
 
-It turns out that for one-off use, it's better to use an
+It turns out that for one-off use, it's more convenient to use an
 [anonymous function](https://en.wikipedia.org/wiki/Anonymous_function).
 Anonymous functions (or lambdas) are defined using `fun`.
 
@@ -118,7 +129,7 @@ utop[40]> (fun x -> x * x);;
 (* type signature of a function from int to int *)
 utop[41]> (fun x -> x * x) 16;;
 - : int = 256
-(* anonymous function called with 16 as an argument *)
+(* anonymous function that squares its argument is passed 16 *)
 ```
 
 Therefore, this:
@@ -129,12 +140,12 @@ utop[39]> List.iter [1;2;3;4;5] ~f:(fun x -> printf "%d\n" x) ;;
 should work just as nicely.
 
 We know know how to generate a list containing the lines of the
-log-file, and how to iterate over a list. All we need to do is to
-figure out what to do with each line of the list. That's what should
-be in the body of the function argument to `List.iter`.
+log-file, and how to iterate over a list. We need to figure out what
+to do with each line of the list. That's what should be in the body of
+the function argument to `List.iter`.
 
-In the below skeleton, we are creating a `Hashtbl`, filling it up and
-then returning it.
+In the skeleton below, we create a `Hashtbl`, fill it up and
+then return it.
 
 ```ocaml
 let generate_frequency_table file_path =
@@ -148,7 +159,8 @@ let generate_frequency_table file_path =
 ;;
 ```
 
-Let's discuss how hash-tables work in a language like Python.
+Let's digress and discuss how hash-tables work in a language like
+Python.
 
 ```python
 In [1]: table = {1 : "one", 2 : "two", 3 : "three" }
@@ -163,28 +175,32 @@ In [4]: table.get(4)
 # this returns None, because 4 isn't a key in the hash-table
 ```
 
-So, we can say that for a hash-table `{KeyType : ValueType}`,
-`get(KeyType)` returns the `KeyType`'s associated `ValueType` _or_
-`None` if it doesn't exist.
+So, for a hash-table `{KeyType : ValueType}`, `get(KeyType)` returns
+the `KeyType`'s associated `ValueType` _or_ `None` if it doesn't
+exist.
 
 You just can't have a function in OCaml that returns type A in some
 cases, and another type B in other cases. How OCaml gets around this
 is by using [Option types](https://en.wikipedia.org/wiki/Option_type).
-There is a enlightening discussion of user defined types
-[here](http://www2.lib.uchicago.edu/keith/ocaml-class/userdefined.html).
+For an enlightening discussion of user defined types please read
+[this](http://www2.lib.uchicago.edu/keith/ocaml-class/userdefined.html).
 
 The `option` type in OCaml is predefined like this:.
 
 ```ocaml
 type 'a option = Some of 'a | None
 ```
+
 `option` is a polymorphic type, which means that `'a` could be any
 type, just like how the list type can hold elements of type `'a`. This
-pretty much means a list can hold any type of element. We can think of
-the type `int option` as: "it is _either_ an `int` or `None`". 
+means that a list can contain elements of any type, as long as they
+are all of the same type.
 
-We concern ourself with `option` because we have to use `Hashtbl.find`
-to get the frequencies from the hash-table.
+We can think of the type `int option` as: "it is _either_ an `int` or
+`None`".
+
+We concern ourself with understanding `option` types because a function we use,
+`Hashtbl.find` returns an `option` type, as we can see below.
 
 ```ocaml
 utop[42]> Hashtbl.find ;;
@@ -196,8 +212,23 @@ utop[42]> Hashtbl.find ;;
 `Hashtbl.find` takes a `Hashtbl.t` and a `'KeyType` and returns a
 `'ValueType option`.
 
-[This](https://blogs.janestreet.com/making-something-out-of-nothing-or-why-none-is-better-than-nan-and-null/)
-should make the following code trivial to understand.
+```ocaml
+utop[75]> let table = Hashtbl.Poly.create () ;;
+val table : ('_a, '_b) Hashtbl.t = <abstr>
+
+utop[82]> Hashtbl.add table ~key:"two" ~data:2 ;;
+- : [ `Duplicate | `Ok ] = `Ok
+
+utop[83]> Hashtbl.add table ~key:"one" ~data:1 ;;
+- : [ `Duplicate | `Ok ] = `Ok
+
+utop[84]> Hashtbl.find table "two" ;;
+- : int option = Some 2
+```
+
+Now that we understand the basics of `Hashtbl`, please read
+[this](https://blogs.janestreet.com/making-something-out-of-nothing-or-why-none-is-better-than-nan-and-null/) 
+so that the following code trivial to understand.
 
 ```ocaml
 let current_count = 
@@ -208,7 +239,7 @@ let current_count =
 ```
 
 Whew! After a _lot_ of digressions, we finally arrive at the full
-function. It is easy to understand what it is doing.
+function. I hope that it's decomposition was easy to understand.
 
 ```ocaml
 let generate_frequency_table file_path =
@@ -232,9 +263,10 @@ calculations.
 
 We have two choices before us:
 
-1. We can load all the `(Line, Freq)` tuples into an array, sort it and
-then take the first `k` elements. Sorting is `O(n log n)`, but it does
-more work than necessary, as we only need `k` most-frequent elements.
+1. We can load all the `(Line, Freq)` tuples into an array, sort it in
+   descending order and then take the first `k` elements. Sorting is
+   `O(n log n)`, but it does more work than necessary, as we only need
+   `k` most-frequent elements.
 
 2. We can use heaps.
 
@@ -280,23 +312,26 @@ heap and returns an integer. As we are storing 2-tuples in the heap,
 A naïve implementation that I first came up with loaded all the
 `(Line, Freq)` tuples into a max heap, and then removed the top `k`
 elements. This approach is bound to spend up a lot of time in heap
-readjusting; a `O(log n)` operation.
+readjusting; a `O(log n)` operation, where `n` is the number of unique
+lines.
 
 While discussing this problem, [gsathya](http://gsathya.in/) whipped
 up a quick implementation in Python, the distinctive feature of which
 is that he uses a _min-heap_ that only holds `k` elements. We can
-restrict the size of the min-heap to `k` elements, and then only
+restrict the size of the min-heap to `k` elements, and then _only_
 insert elements into it if the current element is greater than the
-minimum. Eventually, this min-heap of size `k` will hold the `k`
-largest elements, i.e. at the end of the operation it will hold the
-`kth` largest element as the top most element and all the other
-elements greater it.
+minimum.
+
+This min-heap of size `k` will eventually hold the `k` largest
+elements, i.e. at the end of the operation it will hold the `kth`
+largest element as the top most element and all the other elements
+greater it.
 
 Let's see how we generate this `k` sized min-heap. The `iter`
 functions defined for the various collection types, iterate over _all_
-the element. This is not what we want, at least for the first part of
-generate the heap. We need to find a way to take `k` elements from
-the frequency_table and then insert them into the min-heap.
+the elements. We need to find a way to take `k` elements from the
+frequency_table and then insert them into the min-heap. Let's discuss
+the code we use to achieve this:
 
 ```ocaml
   let k_heap = Hash_heap.Heap.create ~cmp:tuple_greater_than () in (* 1 *)
@@ -314,7 +349,10 @@ the frequency_table and then insert them into the min-heap.
 
 2. Generates a list of keys
 
-3. Converts the list to a [Sequence](https://ocaml.janestreet.com/ocaml-core/111.17.00/doc/core/#Std.Sequence).
+3. Converts the list to a
+   [Sequence](https://ocaml.janestreet.com/ocaml-core/111.17.00/doc/core/#Std.Sequence). Using
+   sequences should hopefully be better than passing massive lists
+   from one function to another.
 
 4. Ideally, we'd be able to write `|> Sequence.take k`, but
    because that function hasn't been defined with labeled arguments,
@@ -329,6 +367,9 @@ the frequency_table and then insert them into the min-heap.
    about that here. We add the `(Line, Freq)` tuple to the heap, and
    finally remove the line from the hash-table.
 
+Instead of using pipes, we could rewrite the above chunk of code like
+this:
+
 ```ocaml
 (Sequence.iter
   (Sequence.take
@@ -338,11 +379,12 @@ the frequency_table and then insert them into the min-heap.
   ~f:(fun line -> (* ... *)))
 ```
 
-The above code looks Lispier, but I prefer the version with pipes as
-that is more idiomatic OCaml. For the code above we have to understand
+This looks Lispier, but I prefer the version with pipes as that is
+more idiomatic OCaml. In the code shown above we have to understand
 what's happening from the inside out, i.e. from the innermost function
 call. Using the pipe operator we can comprehend the code more
-naturally from the outside in.
+naturally from the outside in, actually following the sequence of the
+flow of data.
 
 We have to iterate over the remaining lines in the hash-table and if
 we find a line that has a frequency greater than frequency of the top
@@ -351,7 +393,7 @@ element in the min-heap, we remove the top element, and add a new tuple.
 We now have a min-heap with the k-most frequent lines. However, we
 want to print the lines in descending order, so we create a new
 _max-heap_ from which we can remove the elements one by one. Notice
-now we use `tuple_less_than` instead of `tuple_greater_than`.
+that we use `tuple_less_than` instead of `tuple_greater_than`.
 
 ```ocaml
 let reversed_heap = Hash_heap.Heap.create ~cmp:tuple_less_than ()
@@ -401,8 +443,12 @@ We remove the top element `num_pops` times and because we are sure
 that the element exists we can `Option.value_exn` to unwrap the
 return value of `Hash_heap.Heap.pop`.
 
-That's about it, really. Have a look at the complete implementation of the problem
+That's about it, really. You should be able to understand the the
+complete implementation of the problem
 [here](https://github.com/codesurfers/article-code/blob/master/k-most-frequent-lines/ocaml/log_lines.ml).
-There's an earlier
-[C++ version](https://github.com/codesurfers/article-code/blob/master/k-most-frequent-lines/c%2B%2B/log-lines.cc)
-as well.
+There's also an earlier C++
+[version](https://github.com/codesurfers/article-code/blob/master/k-most-frequent-lines/c%2B%2B/log-lines.cc)
+which makes heavy use of the standard libary.
+
+Thanks for your patience in reading this rather long walkthrough. I
+hope you were able to gain something from it.
