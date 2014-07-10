@@ -46,7 +46,14 @@ library. This is different from OCaml's standard library.
 [This](https://github.com/realworldocaml/book/wiki/Installation-Instructions)
 page has some installation instructions.
 
-You can refer to [Real World
+You should be able to do the following in utop:
+
+```ocaml
+utop[85]> #require "core";;
+utop[86]> open Core.Std;;
+```
+
+Please refer to [Real World
 OCaml](https://realworldocaml.org/v1/en/html/index.html) if you run
 into any trouble, and surely let me know if any part of the tutorial
 is not as helpful as it could be.
