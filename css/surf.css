@@ -29,6 +29,7 @@ nav {
 
 #content {
     position: absolute;
+    width: 100%;
     top: 30px;
     left: 0px;
     padding-left: 5px;
