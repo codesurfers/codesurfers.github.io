@@ -44,10 +44,12 @@ Before we go any further, I'd like to mention that we are using the
 [Core](https://ocaml.janestreet.com/ocaml-core/111.17.00/doc/core/#Std)
 library. This is different from OCaml's standard library.
 [This](https://github.com/realworldocaml/book/wiki/Installation-Instructions)
-page has some installation instructions. I started learning OCaml by
-reading [Real World
-OCaml](https://realworldocaml.org/v1/en/html/index.html). Referring to
-it should help if you run into any trouble.
+page has some installation instructions.
+
+You can refer to [Real World
+OCaml](https://realworldocaml.org/v1/en/html/index.html) if you run
+into any trouble, and surely let me know if any part of the tutorial
+is not as helpful as it could be.
 
 Let's get started coding!
 
