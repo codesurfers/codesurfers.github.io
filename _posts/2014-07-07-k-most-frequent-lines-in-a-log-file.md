@@ -40,6 +40,17 @@ finally return the hash_table
 
 The above pseudo-Python describes what we need to do.
 
+Before we go any further, I'd like to mention that we are using the
+[Core](https://ocaml.janestreet.com/ocaml-core/111.17.00/doc/core/#Std)
+library. This is different from OCaml's standard library.
+[This](https://github.com/realworldocaml/book/wiki/Installation-Instructions)
+page has some installation instructions. I started learning OCaml by
+reading [Real World
+OCaml](https://realworldocaml.org/v1/en/html/index.html). Referring to
+it should help if you run into any trouble.
+
+Let's get started coding!
+
 We need a way of getting the lines of the log file. The function
 `In_channel.read_lines` takes a filepath as an argument and returns a
 list of strings.
