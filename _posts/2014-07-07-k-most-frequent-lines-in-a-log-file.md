@@ -338,11 +338,12 @@ readjusting; a `O(log n)` operation, where `n` is the number of unique
 lines.
 
 While discussing this problem, [gsathya](http://gsathya.in/) whipped
-up a quick implementation in Python, the distinctive feature of which
-is that he uses a _min-heap_ that only holds `k` elements. We can
-restrict the size of the min-heap to `k` elements, and then _only_
-insert elements into it if the current element is greater than the
-minimum.
+up a quick
+[implementation](https://github.com/gsathya/dsalgo/blob/master/algo/k_frequent.py)
+in Python, the distinctive feature of which is that he uses a
+_min-heap_ that only holds `k` elements. We can restrict the size of
+the min-heap to `k` elements, and then _only_ insert elements into it
+if the current element is greater than the minimum.
 
 This min-heap of size `k` will eventually hold the `k` largest
 elements, i.e. at the end of the operation it will hold the `kth`
