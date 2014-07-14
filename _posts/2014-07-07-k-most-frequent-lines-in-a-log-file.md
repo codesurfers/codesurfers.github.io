@@ -161,7 +161,7 @@ utop[39]> List.iter [1;2;3;4;5] ~f:(fun x -> printf "%d\n" x) ;;
 ```
 should work just as nicely.
 
-We know know how to generate a list containing the lines of the
+We know how to generate a list containing the lines of the
 log-file, and how to iterate over a list. We need to figure out what
 to do with each line of the list. That's what should be in the body of
 the function argument to `List.iter`.
