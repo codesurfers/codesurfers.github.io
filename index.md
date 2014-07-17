@@ -1,6 +1,6 @@
 ---
 layout: default
-title: the codesurfers network
+title: codesurfers
 ---
 
 We <3 code.
