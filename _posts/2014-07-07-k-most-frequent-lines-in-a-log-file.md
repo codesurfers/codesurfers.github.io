@@ -207,7 +207,7 @@ is by using [Option types](https://en.wikipedia.org/wiki/Option_type).
 For an enlightening discussion of user defined types please read
 [this](http://www2.lib.uchicago.edu/keith/ocaml-class/userdefined.html).
 
-The `option` type in OCaml is predefined like this:.
+The `option` type in OCaml is predefined like this:
 
 ```ocaml
 type 'a option = Some of 'a | None
@@ -250,7 +250,7 @@ utop[84]> Hashtbl.find table "two" ;;
 
 Now that we understand the basics of `Hashtbl`, please read
 [this](https://blogs.janestreet.com/making-something-out-of-nothing-or-why-none-is-better-than-nan-and-null/) 
-so that the following code trivial to understand.
+so that the following code is trivial to understand.
 
 ```ocaml
 let current_count = 
@@ -261,7 +261,7 @@ let current_count =
 ```
 
 Whew! After a _lot_ of digressions, we finally arrive at the full
-function. I hope that it's decomposition was easy to understand.
+function. I hope that its decomposition was easy to understand.
 
 ```ocaml
 let generate_frequency_table file_path =
@@ -295,16 +295,16 @@ We have two choices before us:
 Heaps are better with the assumption that `k` is much smaller than the
 number of lines `n` in the log file. This is because the maximum (or
 minimum, if we are using a `min-heap`) element is always guaranteed to
-be at the top of the queue. Once this maximum is removed, the priority
-queue is _readjusted_ so that the next maximum element becomes the top
-most element. Readjusting a heap `k` times might be better than having
-to sort a possibly very large vector of `(Line, Freq)` tuples.
+be at the top of the queue. Once this maximum is removed, the heap is
+_readjusted_ so that the next maximum element becomes the top most
+element. Readjusting a heap `k` times might be better than having to
+sort a possibly very large vector of `(Line, Freq)` tuples.
 
 Normally tuple comparison happens lexicographically, i.e. like a
 dictionary.
 
 Lexicographically speaking: `"be" > "abracadabra"`, because we start
-comparing by characters in corresponding places. We compare the
+by comparing characters in corresponding places. We compare the
 corresponding characters in the next position, only if there is a tie.
 
 We need a function that compares the second (integral) element of two
@@ -320,7 +320,8 @@ let tuple_greater_than a b =
 
 You might be wondering why we don't do `a_snd > b_snd` instead of
 finding the difference and returning a numeric value. This is because
-the function passed as an argument to order a heap has this type:
+the function passed as an argument to order a heap has the type `'a ->
+'a -> int`.
 
 ```ocaml
 utop[62]> Hash_heap.Heap.create ;;
@@ -332,10 +333,10 @@ heap and returns an integer. As we are storing 2-tuples in the heap,
 `tuple_greater_than` is defined so that it can operate on that type.
 
 A naïve implementation that I first came up with loaded all the
-`(Line, Freq)` tuples into a max heap, and then removed the top `k`
-elements. This approach is bound to spend up a lot of time in heap
-readjusting; a `O(log n)` operation, where `n` is the number of unique
-lines.
+`(Line, Freq)` tuples into a `max-heap`, and then removed the top `k`
+elements. This approach is bound to spend up a lot of time in
+readjusting a large heap; a `O(log n)` operation, where `n` is the
+number of unique lines. Surely not optimal.
 
 While discussing this problem, [gsathya](http://gsathya.in/) whipped
 up a quick
@@ -413,10 +414,11 @@ We have to iterate over the remaining lines in the hash-table and if
 we find a line that has a frequency greater than frequency of the top
 element in the min-heap, we remove the top element, and add a new tuple.
 
-We now have a min-heap with the k-most frequent lines. However, we
-want to print the lines in descending order, so we create a new
-_max-heap_ from which we can remove the elements one by one. Notice
-that we use `tuple_less_than` instead of `tuple_greater_than`.
+We end up with a min-heap containing the k-most frequent
+lines. However, we want to print the lines in descending order, so we
+create a new _max-heap_ from which we can remove the elements one by
+one. Notice that we use `tuple_less_than` instead of
+`tuple_greater_than`.
 
 ```ocaml
 let reversed_heap = Hash_heap.Heap.create ~cmp:tuple_less_than ()
