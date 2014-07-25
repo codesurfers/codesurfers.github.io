@@ -71,6 +71,10 @@ Haskell.
 
 #### OCaml
 
+[Awesome OCaml](https://github.com/rizo/awesome-ocaml/)
+
+A collection of OCaml resources.
+
 [Real World OCaml](https://realworldocaml.org/)
 
 A book about OCaml, a fast, functional programming
