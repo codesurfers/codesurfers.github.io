@@ -40,9 +40,9 @@ appropriate, take advantage of what C++ has to offer.
 
 [superhero.js](http://superherojs.com/)
 
-A colllection of JS resources.
+A collection of JS resources.
 
-[Eloquent JavaScript](http://eloquentjavascript.net/contents.html)
+[Eloquent JavaScript](http://eloquentjavascript.net/)
 
 A modern introduction to web development using JavaScript.
 
