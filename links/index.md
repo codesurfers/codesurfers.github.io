@@ -396,6 +396,10 @@ system at the bleeding edge.
 
 Just read it.
 
+[What I Tell All New Programmers](http://josephg.com/blog/what-i-tell-all-new-programmers/)
+
+Good advice that new programmers will do well to follow.
+
 [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
 
 Check out his other articles, as well.
