@@ -1,3 +1,4 @@
 name: codesurfers.net
 markdown: redcarpet
 highlighter: pygments
+theme: jekyll-theme-minimal
