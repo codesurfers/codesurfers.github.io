@@ -31,16 +31,10 @@ running the example code and doing the exercises from the book.
 
 [Programming Abstractions in C++](http://www-cs-faculty.stanford.edu/%7Eeroberts//CS106BX-Reader.pdf)
 
-A good way to effectively use the ubiquitous C++
-programming language. Stop writing C-like C++! When
-appropriate, take advantage of what C++ has to offer.
+A tutorial introduction to C++.
+
 
 #### JavaScript
-
-
-[superhero.js](http://superherojs.com/)
-
-A collection of JS resources.
 
 [Eloquent JavaScript](http://eloquentjavascript.net/)
 
@@ -82,6 +76,15 @@ language used in research and industry.
 
 #### Lisp
 
+##### Clojure
+
+[Clojure](https://clojure.org/)
+
+Clojure is a well-designed Lisp, which embraces good ideas from
+multiple paradigms.
+
+##### Common Lisp
+
 [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
 An introduction to Common Lisp describing the construction
@@ -93,14 +96,9 @@ A collection of CL resources.
 
 #### Newer programming languages
 
-[Rust](http://www.rust-lang.org/) 
+[Rust](http://www.rust-lang.org/)
 
-A systems programming language developed by Mozilla.
-
-[Shen](http://www.shenlanguage.org/)
-
-A new Lisp. Shen draws inspiration from functional programming, type
-theory and the ancient Lisp tradition.
+A systems programming language with a focus on memory safety.
 
 ### Programming Language Theory
 
@@ -117,7 +115,7 @@ Pro research.
 [Beej's Guide to Network Programming Using Internet
   Sockets](http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html)
 
-A humorous guide to get started with network programming.
+A humorous guide to get started with network programming in C.
 
 ## CS
 
@@ -134,49 +132,6 @@ of CS ought to know.
 [Alex Bowe's interview prep advice](http://alexbowe.com/failing-at-google-interviews/)
 
 [Steve Yegge's interview prep advice](http://steve-yegge.blogspot.in/2008/03/get-that-job-at-google.html)
-
-## Design
-
-### Web
-
-Designing clean, elegant and portable webpages requires
-taste and patience. There are an abundance of HTML tutorials
-on the web.
-
-[HTML Standard](http://www.w3.org/html/wg/drafts/html/master/)
-
-[Modularised CSS Specifications](http://dev.w3.org/csswg/)
-
-The latest drafts of the HTML and CSS specifications. The
-links to the stable standards shouldn't be too hard to
-find. Use the stable standards for web design, and the
-latest drafts to know what the future standards are
-(probably) going to be like.
-
-
-[CSS Positioning](http://alistapart.com/article/css-positioning-101)
-
-[CSS Floats](http://alistapart.com/article/css-floats-101)
-
-Learn how to float and position element using CSS and
-avoid some sources of frustrating confusion.
-
-[Markdown](http://daringfireball.net/projects/markdown/syntax)
-
-Markdown is a (plaintext) writing format that is widely
-used. Writing Markdown reduces the amount of HTML you have
-to hand-write. Markdown parsers/converters are widely
-available.
-
-You could write content in Markdown and use something like
-[jekyll](http://jekyllrb.com/) to generate the static html webpages of
-your site/blog.
-
-[MDN CSS Reference](https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference?redirect=no)
-
-[JavaScript Guide](https://developer.mozilla.org/en-US/docs/JavaScript/Guide)
-
-[JavaScript Garden](http://bonsaiden.github.com/JavaScript-Garden/)
 
 ## Tools
 
@@ -222,32 +177,34 @@ editor.
 It can be extended in trivial, and extremely non-trivial ways with
 Emacs Lisp, which also happens to be the language it is written in.
 
+[VS Code](https://code.visualstudio.com/)
+
+A modern open-source text editor developed by Microsoft.
+
 [Notepad++](http://www.notepad-plus-plus.org/)
 
 An easy to use, feature-laden text editor.
-
-[LightTable](http://www.lighttable.com/)
-
-An interactive IDE written in ClojureScript.
 
 ### Version Control
 
 A Version Control System (VCS) is used to track changes in
 files. Even the most trivial projects can quickly become
-unmanageable if a VCS is not used. You will need to know how
-to use the VCS a project is versioned with, if you want to
-contribute to it.
-
-
-[Mercurial](http://hginit.com/01.html)
-
-Mercurial is supposedly easier to learn and use when compared to
-Git. This tutorial covers the fundamental idea behind version control
-and basic usage of Mercurial.
+unmanageable if a VCS is not used.
 
 [Pro Git](http://git-scm.com/book)
 
 A solid introduction to the powerful Git version control system.
+
+[Mercurial](http://hginit.com/01.html)
+
+Mercurial is easier to learn and use when compared to
+Git. This tutorial covers the fundamental idea behind version control
+and basic usage of Mercurial.
+
+[Commit message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+
+It is important to write good commit messages so that commit history
+is readable.
 
 ### Command-line
 
@@ -270,8 +227,22 @@ The GNU coreutils bundled with GNU/Linux can be used to
 perform straighforward tasks, and also arcane
 wizardry.
 
-For as long as text terminals are used, it will be worth your while
-to be comfortable with using these.
+For as long as text terminals are used, it will be worth your while to
+be comfortable with using these.
+
+[hh](https://github.com/dvorka/hstr)
+
+Allows you to easily view, navigate, search and manage your command
+history.
+
+[fzf](https://github.com/junegunn/fzf)
+
+A command line fuzzy finder.
+
+[ripgrep](https://github.com/BurntSushi/ripgrep)
+
+Similar to other popular search tools like The Silver Searcher, ack
+and grep which can be used to search directories recursively.
 
 ### Window Managers
 
@@ -284,17 +255,13 @@ running. Alt-Tab never again!
 
 [xmonad](http://xmonad.org/)
 
-A commonly used tiling window manager written in Haskell.
-
-[awesome](http://awesome.naquadah.org/)
-
-Another decent tiling window manager.
+A tiling window manager written in Haskell.
 
 ### Graphics
 
 [Inkscape](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/)
 
-The best open source SVG editor there is.  Also allows importing from,
+The best open source SVG editor there is. Also allows importing from,
 exporting to the commonly used graphical formats.
 
 ### Miscellaneous
@@ -320,6 +287,8 @@ with time they become indispensable.
 
 ### Programming Language References
 
+#### C++
+
 [C++ Reference](http://en.cppreference.com/w/)
 
 Handy quick reference while writing C++ code. It can be
@@ -339,6 +308,8 @@ Fairly large collection of C++ FAQs and their answers.
 C++ Frequently Questioned Answers.
 
 [Official C++ FAQ](http://isocpp.org/wiki/faq)
+
+#### Common Lisp
 
 [Simplified Common Lisp Reference](http://jtra.cz/stuff/lisp/sclr/index.html)
 
@@ -428,15 +399,4 @@ There are some interesting ideas presented here.
 
 ### Books
 
-#### Misc
-
-[The Art of Community](http://www.artofcommunityonline.org/downloads/jonobacon-theartofcommunity-1ed.pdf)
-
-A book on how to build and sustain a community.
-
-### Lists
-
-[List of Free Programming Books](http://resrc.io/list/10/list-of-free-programming-books/)
-
-A massive collection of links to freely available books of
-interest to programmers.
+TBD
