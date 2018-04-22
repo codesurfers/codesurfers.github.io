@@ -13,18 +13,6 @@ The official tutorial for programming in Python. Having some
 programming experience will help you to move through the material
 presented here at a faster pace.
 
-[The C Programming Language](http://cm.bell-labs.com/cm/cs/cbook/)
-
-An excellent way to learn C, a widely used, influential
-programming language.
-
-[Structure and Interpretation of Computer Programs
-  (SICP)](http://mitpress.mit.edu/sicp/full-text/book/book.html)
-
-An introduction to computation and
-programming. [Racket](http://racket-lang.org/) is a good choice for
-running the example code and doing the exercises from the book.
-
 ### Language Specific Resources
 
 #### C/C++
@@ -43,7 +31,7 @@ A modern introduction to web development using JavaScript.
 
 #### Python
 
-[pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
+[pycrumbs](https://github.com/kirang89/pycrumbs/)
 
 A comprehensive, categorised collection of Python Resources.
 
@@ -71,8 +59,8 @@ A collection of OCaml resources.
 
 [Real World OCaml](https://realworldocaml.org/)
 
-A book about OCaml, a fast, functional programming
-language used in research and industry.
+A book about OCaml, a fast, functional programming language used in
+research and industry. A new edition is in the works.
 
 #### Lisp
 
@@ -80,8 +68,9 @@ language used in research and industry.
 
 [Clojure](https://clojure.org/)
 
-Clojure is a well-designed Lisp, which embraces good ideas from
-multiple paradigms.
+Clojure is a modern Lisp on the JVM, which incorporates great ideas
+from multiple paradigms. Easy interoperability with the large number
+of available Java libraries is an added bonus.
 
 ##### Common Lisp
 
@@ -98,7 +87,7 @@ A collection of CL resources.
 
 [Rust](http://www.rust-lang.org/)
 
-A systems programming language with a focus on memory safety.
+A modern systems programming language.
 
 ### Programming Language Theory
 
@@ -399,4 +388,16 @@ There are some interesting ideas presented here.
 
 ### Books
 
-TBD
+#### Introductory programming
+
+[The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language)
+
+An excellent way to learn C, a widely used, influential programming
+language.
+
+[Structure and Interpretation of Computer Programs
+  (SICP)](http://mitpress.mit.edu/sicp/full-text/book/book.html)
+
+An enlightening introduction to computation and
+programming. [Racket](http://racket-lang.org/) is a good choice for
+running the example code and doing the exercises from the book.
