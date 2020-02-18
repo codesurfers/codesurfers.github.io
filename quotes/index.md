@@ -42,6 +42,29 @@ not know its costs will generally not respect it, either.
 
 [Eric Naggum](http://www.xach.com/naggum/)
 
+The best way to predict the future is to invent it.
+
+I invented the term "object-oriented", and I can tell you I didn't
+have C++ in mind.
+
+[Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay)
+
+There are only two kinds of languages: the ones people complain about and the ones nobody uses.
+
+[Bjarne Stroustrup](https://en.wikipedia.org/wiki/Bjarne_Stroustrup)
+
+All language designers are arrogant. Goes with the territory...
+
+The three chief virtues of a programmer are: Laziness, Impatience and Hubris.
+
+Easy things should be easy, and hard things should be possible.
+
+If someone stinks, view it as a reason to help them, not a reason to avoid them. 
+
+Yes, I'm afraid chartreuse is one of my favorite colors...
+
+[Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall)
+
 #### Free Software
 
 Free software is the world's most advanced technical education
