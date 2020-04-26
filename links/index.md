@@ -67,7 +67,7 @@ tradeoffs need to be carefully considered.
 
 [Janet](https://janet-lang.org/)
 
-A modern Clojure-like Lisp—without the JVM baggage—designed for easy
+A modern Clojure-like Lisp without the JVM baggage designed for easy
 embeddability.
 
 [Clojure](https://clojure.org/)
