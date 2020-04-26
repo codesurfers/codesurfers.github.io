@@ -98,9 +98,9 @@ consequences freely.
 
 Eben Moglen
 
-_May you do good and not evil_
-_May you find forgiveness for yourself and forgive others_
-_May you share freely, never taking more than you give._
+_May you do good and not evil_  
+_May you find forgiveness for yourself and forgive others_  
+_May you share freely, never taking more than you give._  
 
 Blessing found in the [SQLite](https://www.sqlite.org/different.html)
 source code.
