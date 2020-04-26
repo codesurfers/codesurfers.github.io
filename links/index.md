@@ -81,8 +81,9 @@ It features persistent data structures, a well-designed sequence
 abstraction, great support for concurrency, and to round it off, good
 performance on the JVM.
 
-The error handling and interactivity may not as good as Common Lisp,
-but it doesn't have all of Common Lisp's warts and historical baggage.
+The error handling and interactivity may not be as good as Common
+Lisp, but it doesn't have all of Common Lisp's warts and historical
+baggage.
 
 [Racket](http://racket-lang.org/)
 
@@ -109,11 +110,12 @@ A collection of CL resources.
 
 [Rust](http://www.rust-lang.org/)
 
-A systems programming language.
+A systems programming language that seems to keep winning Stack
+Overflow's "Most Loved Programming Language" year after year.
 
 [Prolog](https://en.wikipedia.org/wiki/Prolog)
 
-A logic-programming language. You are probably best of starting with
+A logic-programming language. You are probably best off starting with
 [SWI-Prolog](https://www.swi-prolog.org/).
 
 [Raku](https://raku.org/)
@@ -128,6 +130,10 @@ Raku is an expressive, gradually typed, multi-paradigm language
 drawing from the rich history and
 roll-up-your-sleeves-and-get-your-hands-dirty hacker-ethos of Perl
 with the explicit goal of being a fun language to program in.
+
+Notable features include first-class support for grammars, modern
+concurrency primitives, a MOP, being able to easily define arbitrary
+operators, and keeping in line with Perl's legacy, all new regexes.
 
 
 ### Programming Language Theory
@@ -200,8 +206,8 @@ to start a basic tutorial.
 
 [Emacs](http://www.gnu.org/software/emacs/tour/)
 
-An operating system containing (amongst many, many other things) a
-file manager, calculator, games, package manager and (arguably) a text
+An operating system containing, amongst many other things, a file
+manager, calculator, games, package manager and (arguably) a text
 editor.
 
 It can be extended in trivial, and non-trivial ways with Emacs Lisp,
@@ -355,7 +361,7 @@ C++ Frequently Questioned Answers.
 
 A selection of commonly used symbols.
 
-[Common Lisp HyperSpec™ ](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
+[Common Lisp HyperSpec™](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
 
 The entire ANSI CL standard in HTML. Rather readable.
 
