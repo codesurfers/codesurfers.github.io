@@ -36,7 +36,7 @@ Pablo Picasso
 
 Enlightenment is probably antithetical to impatience.
 
-People who want to learn are, however, always welcome.  People who
+People who want to learn are, however, always welcome. People who
 respect knowledge, know what it costs to acquire it.  People who do
 not know its costs will generally not respect it, either.
 
@@ -65,6 +65,29 @@ Yes, I'm afraid chartreuse is one of my favorite colors...
 
 [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall)
 
+(Note: The below conversation is from an interview published
+[here](https://www.quantamagazine.org/computer-scientist-donald-knuth-cant-stop-telling-stories-20200416/).)
+
+Jack London wrote 1,000 words every day before talking to anybody. He
+was totally, “Let me alone until I’ve got my thousand words!” Then he
+would drink or proofread the rest of the day. No, my scheduling
+principle is to do the thing I hate most on my to-do list. By week’s
+end, I’m very happy.
+
+It would be very easy for me to say, “Oh, let me be a genius and never
+clean the toilet.” But even cleaning toilets is doable. (My wife) Jill
+and I got uniforms that have a slot where the 409 cleaner fits. You go
+over there and squirt and feel good cleaning the toilet!
+
+A person’s success in life is determined by having a high minimum, not
+a high maximum. If you can do something really well but there are
+other things at which you’re failing, the latter will hold you
+back. But if almost everything you do is up there, then you’ve got a
+good life. And so I try to learn how to get through things that others
+find unpleasant.
+
+[Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+
 #### Free Software
 
 Free software is the world's most advanced technical education
@@ -74,3 +97,10 @@ is fully available, by experimenting with it and by sharing the
 consequences freely.
 
 Eben Moglen
+
+_May you do good and not evil_
+_May you find forgiveness for yourself and forgive others_
+_May you share freely, never taking more than you give._
+
+Blessing found in the [SQLite](https://www.sqlite.org/different.html)
+source code.
