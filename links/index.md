@@ -119,12 +119,10 @@ A logic-programming language. You are probably best of starting with
 [Raku](https://raku.org/)
 
 The language formerly known as Perl 6. At some point the Perl
-community decided to create a "new" version of Perl i.e. Perl 6
-
-As the changes became more and more backwards-incompatible, they
-realised that they were designing an all-new sister language. In 2020,
-after much discussion and Larry Wall's blessing, Perl 6 was renamed to
-Raku.
+community decided to create a "new" version of Perl i.e. Perl 6. As
+the changes became more and more backwards-incompatible, they realised
+that they were designing an all-new sister language. In 2020, after
+much discussion and Larry Wall's blessing, Perl 6 was renamed to Raku.
 
 Raku is an expressive, gradually typed, multi-paradigm language
 drawing from the rich history and
