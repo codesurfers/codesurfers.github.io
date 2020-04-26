@@ -7,6 +7,14 @@ title: links
 
 ### Basic Tutorials
 
+Python is a great choice to start programming in. It is a
+well-designed language with an emphasis on readability. There are a
+multitude of resources and libraries to achieve almost any task
+imaginable.
+
+Later on, you can explore other languages, comparing and contrasting
+them with your technical judgement and taste.
+
 [The Python Tutorial](http://docs.python.org/3/tutorial/)
 
 The official tutorial for programming in Python. Having some
@@ -15,26 +23,11 @@ presented here at a faster pace.
 
 ### Language Specific Resources
 
-#### C/C++
-
-[Programming Abstractions in C++](http://www-cs-faculty.stanford.edu/%7Eeroberts//CS106BX-Reader.pdf)
-
-A tutorial introduction to C++.
-
-
 #### JavaScript
 
 [Eloquent JavaScript](http://eloquentjavascript.net/)
 
 A modern introduction to web development using JavaScript.
-
-
-#### Python
-
-[pycrumbs](https://github.com/kirang89/pycrumbs/)
-
-A comprehensive, categorised collection of Python Resources.
-
 
 #### Haskell
 
@@ -64,15 +57,44 @@ research and industry. A new edition is in the works.
 
 #### Lisp
 
-##### Clojure
+Aaahhhh, the Lisp family of languages. Features of this family include
+expressivity, interactive-development, and macros.
+
+Every Lisp language has its strengths and weaknesses, and the
+tradeoffs need to be carefully considered.
+
+##### Modern Lisps
+
+[Janet](https://janet-lang.org/)
+
+A modern Clojure-like Lisp—without the JVM baggage—designed for easy
+embeddability.
 
 [Clojure](https://clojure.org/)
 
-Clojure is a modern Lisp on the JVM, which incorporates great ideas
-from multiple paradigms. Easy interoperability with the large number
-of available Java libraries is an added bonus.
+Clojure is a modern Lisp on the JVM (and the browser in the form of
+ClojureScript), which incorporates great ideas from multiple
+paradigms. Easy interoperability with the large number of available
+Java libraries is an added bonus.
+
+It features persistent data structures, a well-designed sequence
+abstraction, great support for concurrency, and to round it off, good
+performance on the JVM.
+
+The error handling and interactivity may not as good as Common Lisp,
+but it doesn't have all of Common Lisp's warts and historical baggage.
+
+[Racket](http://racket-lang.org/)
+
+A modern dialect of Scheme, which is gradually becoming the premier
+Scheme-ish language. An interesting feature of Racket is that it has
+several "sublanguages".
 
 ##### Common Lisp
+
+[A Road to Common Lisp](https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/)
+
+Steve Losh's recommendations on how to learn Common Lisp.
 
 [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
@@ -83,11 +105,32 @@ of practical, real world programs.
 
 A collection of CL resources.
 
-#### Newer programming languages
+#### Programming languages
 
 [Rust](http://www.rust-lang.org/)
 
-A modern systems programming language.
+A systems programming language.
+
+[Prolog](https://en.wikipedia.org/wiki/Prolog)
+
+A logic-programming language. You are probably best of starting with
+[SWI-Prolog](https://www.swi-prolog.org/).
+
+[Raku](https://raku.org/)
+
+The language formerly known as Perl 6. At some point the Perl
+community decided to create a "new" version of Perl i.e. Perl 6
+
+As the changes became more and more backwards-incompatible, they
+realised that they were designing an all-new sister language. In 2020,
+after much discussion and Larry Wall's blessing, Perl 6 was renamed to
+Raku.
+
+Raku is an expressive, gradually typed, multi-paradigm language
+drawing from the rich history and
+roll-up-your-sleeves-and-get-your-hands-dirty hacker-ethos of Perl
+with the explicit goal of being a fun language to program in.
+
 
 ### Programming Language Theory
 
@@ -160,11 +203,21 @@ to start a basic tutorial.
 [Emacs](http://www.gnu.org/software/emacs/tour/)
 
 An operating system containing (amongst many, many other things) a
-file manager, calculator, games, package manager and even a text
+file manager, calculator, games, package manager and (arguably) a text
 editor.
 
-It can be extended in trivial, and extremely non-trivial ways with
-Emacs Lisp, which also happens to be the language it is written in.
+It can be extended in trivial, and non-trivial ways with Emacs Lisp,
+which also happens to be the language it is written in.
+
+Many users of Emacs suffer from the dreaded "Emacs Pinky" due to
+having to press down the Control key (or the Caps Lock key for that
+matter) for almost every command.
+
+This can be alleviated to some extent by adding support of another
+modifier key like "Hyper", to reduce dependence on the Control key.
+
+Users who prefer Vim's more ergonomic keybindings have a lot of
+options in making Emacs work that way.
 
 [VS Code](https://code.visualstudio.com/)
 
@@ -348,13 +401,27 @@ A Linux distribution with an emphasis on simplicity, configurability
 and having the latest software packages. Rolling releases keep your
 system at the bleeding edge.
 
+[FreeBSD](https://www.freebsd.org/)
+
+It is worth checking out some BSDs as well. Features include
+first-class support for ZFS, great networking software, excellent
+documentation, no dependence on systemd, and the BSD license for those
+who prefer it to Linux's GPL.
+
+From what we can gather, it works better on slightly older hardware as
+all the latest and greatest drivers may not be well-supported.
+
+BSDs are used in many sites for critical networking infrastructure
+such as firewalls.
+
 ## Miscellaneous
 
 ### Articles
 
 [How to Become a Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)
 
-Just read it.
+A good introduction to what it means to be a hacker, and how to get
+there.
 
 [What I Tell All New Programmers](http://josephg.com/blog/what-i-tell-all-new-programmers/)
 
@@ -382,11 +449,24 @@ scientist, and his colleagues.
 Slightly dated, but still a good comparison between the various
 languages the author has used in his career.
 
-[Paul Graham's Articles](http://paulgraham.com/articles.html)
-
-There are some interesting ideas presented here.
-
 ### Books
+
+#### Algorithms
+
+[Programming Algorithms](https://lisp-univ-etc.blogspot.com/2019/07/programming-algorithms-book.html)
+
+A freely available book on Programming Algorithms. Common Lisp is used
+as the implementation language, which is a refreshing change.
+
+#### Distributed Systems
+
+[Designing Data-Intensive Applications](https://dataintensive.net/)
+
+Any one working with backend web applications, database infrastructure
+will need to have a good understanding of distributed systems, for
+which this book is the premier resource for working professionals. An
+absolute must-read that will pay dividends many times over in your
+career.
 
 #### Introductory programming
 
@@ -400,4 +480,20 @@ language.
 
 An enlightening introduction to computation and
 programming. [Racket](http://racket-lang.org/) is a good choice for
-running the example code and doing the exercises from the book.
+running the example code and doing the exercises from the book as it
+has a sublanguage for that specific dialect of Scheme.
+
+#### Lisp Books
+
+[Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp](https://github.com/norvig/paip-lisp)
+
+Peter Norvig has kindly made this book freely available which
+deals with implementing classical AI algorithms in Common Lisp.
+
+While we are on the subject of Mr. Norvig, his articles on [Solving
+Every Sudoku Puzzle](http://www.norvig.com/sudoku.html) and [How to
+Write a Spelling Corrector](http://www.norvig.com/spell-correct.html)
+are legendary. It is manifest how powerful and elegant programming can
+be when performed by a master. Any programmer who can write a
+technical article of a similar quality to these two, should be pleased
+with themselves.
