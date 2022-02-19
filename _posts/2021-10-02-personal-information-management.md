@@ -70,7 +70,7 @@ TreeSheets document, that I keep referring to structure the interview,
 and also take notes as required.
 
 What I particularly like about TreeSheets, is that the author clearly
-uses it has his daily driver, and it shows with the smooth UI,
+uses it as his daily driver, and it shows with the smooth UI,
 performance and easy to learn keyboard shortcuts.
 
 While it does use a binary format, it is
