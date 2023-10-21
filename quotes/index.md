@@ -49,7 +49,8 @@ have C++ in mind.
 
 [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay)
 
-There are only two kinds of languages: the ones people complain about and the ones nobody uses.
+There are only two kinds of languages: the ones people complain about
+and the ones nobody uses.
 
 [Bjarne Stroustrup](https://en.wikipedia.org/wiki/Bjarne_Stroustrup)
 
@@ -59,7 +60,8 @@ The three chief virtues of a programmer are: Laziness, Impatience and Hubris.
 
 Easy things should be easy, and hard things should be possible.
 
-If someone stinks, view it as a reason to help them, not a reason to avoid them. 
+If someone stinks, view it as a reason to help them, not a reason to
+avoid them.
 
 [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall)
 
