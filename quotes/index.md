@@ -61,8 +61,6 @@ Easy things should be easy, and hard things should be possible.
 
 If someone stinks, view it as a reason to help them, not a reason to avoid them. 
 
-Yes, I'm afraid chartreuse is one of my favorite colors...
-
 [Larry Wall](https://en.wikipedia.org/wiki/Larry_Wall)
 
 (Note: The below conversation is from an interview published
