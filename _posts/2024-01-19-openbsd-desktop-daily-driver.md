@@ -128,10 +128,23 @@ read-only support of HAMMER filesystems from OpenBSD. This is likely
 to be the modern filesystem we can realistically hope to use in
 OpenBSD someday.
 
+### Ports system
+
+There are ports for software for which official packages are not
+available. That's the natural place to search in before resorting to
+good old installation from source.
+
 ## Desktop Usage
 
 From the base install, we can quickly make it into a usable state
 without much configuration.
+
+### Custom Keybindings
+
+I make use of the Hyper and Super keys to help with shortening long
+key chords in Emacs. So instead of having to do something like `C-M-k`
+i.e. (Control+Alt+k), I can rebind that to `H-k` (`Hyper+k`) or `s-k`
+(`Super+k`). This eases the strain on my already burdened fingers.
 
 ### Window Manager
 
@@ -217,19 +230,34 @@ bind-mouse 4S-2 window-hide
 
 ### Terminal Emulator
 
+[Alacritty](https://alacritty.org/) works well.
+
 ### Web Browsers
+
+Firefox and Chrome work fine.
+
+One notable difference in how they work is, that by default Firefox
+will only have access to the Downloads directory and no other
+directory on your system. It's a useful security feature, but
+something to keep in mind.
 
 ### Text Editors
 
 #### Emacs
 
 A package is available for vanilla Emacs. If you want the
-bleeding-edge JIT compiled Emacs, you're in for a rough ride.
+bleeding-edge JIT compiled Emacs, you're in for a rough ride. I've
+perceived some slowness with things like magit. Not sure what could be
+the cause of that.
 
 ##### JIT Compiled Emacs
 
+Any 'serious' emacs user now, would want to squeeze every bit of
+performance available by using the [JIT compiled
+Emacs](https://akrl.sdf.org/gccemacs.html).
+
 JIT compiled emacs does not work without an extremely complicated set
-of steps that I have unfortunately not succeeded in executing.
+of steps that I have unfortunately **not** succeeded in executing.
 
 The issue comes because we need `libgccjit`. You may think that you
 can **just** download the source code of GCC and try and build
@@ -278,8 +306,7 @@ be good to go.
 
 ##### Clojure
 
-Once you have Java installed, you can get
-[Leiningen](https://leiningen.org/) and it should work okay.
+Clojure works well.
 
 ##### Elixir
 
@@ -323,6 +350,9 @@ a Linux VM, but with the limitation of a single core, compiling crates
 is going to be slower than it should be, leading to a frustrating
 second-class experience.
 
+It's extremely disappointing that I will essentially need to be on a
+different OS if I wanna do serious development on Rust.
+
 ##### C/C++
 
 Clang++ and GCC work well enough. By default `cc` and `c++` point to
@@ -359,13 +389,22 @@ can be followed to build PG from source and to start the DB service.
 
 ##### SQLite
 
-SQLite should work 
+I'm assuming SQLite works well enough because I use Fossil.
 
 ### Document Preparation
 
-#### Kile
+#### [Kile](https://kile.sourceforge.io/)
+
+I've used [AUCTeX](https://www.gnu.org/software/auctex/) in the past,
+but for whatever reason I couldn't be bothered figuring it out why it
+wasn't working. Ended up using Kile which worked beautifully.
 
 ### Multimedia
+
+#### Image Editing
+
+The [GIMP](https://www.gimp.org/) and
+[Inkscape](https://inkscape.org/) work well.
 
 #### Audio
 
@@ -388,7 +427,7 @@ OpenBSD does not support full duplex audio. This essentially means,
 you cannot mix a stream of audio where one device is recording and
 another is playing audio. You can **only** do one at a time.
 
-This is my biggest gripe with OpenBSD.
+This is one of my biggest gripes with OpenBSD.
 
 #### Video
 
@@ -398,6 +437,13 @@ around by setting the `TearFree` option.
 ```
 xrandr --output DisplayPort-1 --set TearFree on
 ```
+
+Please note run `xrandr` which will list out all the available video
+outputs (`DisplayPort-1` in my case).
+
+
+[ffmpeg](https://ffmpeg.org/) and [VLC](https://www.videolan.org/vlc/)
+work well.
 
 ##### Video conferencing
 
@@ -410,7 +456,24 @@ Webcams work after enabling some video recording flags.
 Video calls do not work because of the missing support for full duplex
 audio mentioned above.
 
+On occasions where I have to share my screen, I share the screen from
+OpenBSD, and connect to the video call with audio and a webcam from a
+different laptop. It's annoying, but hey, you're an OpenBSD user. ;-)
+
 ### Virtualization
+
+There is a homegrown virtualization solution called
+[vmm](https://man.openbsd.org/vmd.8)/[vmd](https://man.openbsd.org/vmd.8). This
+can be used to run OpenBSD or Linux VMs. I think FreeBSD should work
+as well, but I have not tried it.
+
+Linux VMs can be used assuming the bootable ISO/image supports a
+serial console (the debian installer notably does not), so in my
+experience, Alpine Linux, Arch Linux and Nix OS work well enough.
+
+Some have run old versions of Ubuntu as well, but I wouldn't recommend
+running old versions of an OS.
+
 
 ## VPS (VM) Usage
 
@@ -438,17 +501,70 @@ system first instead of having to run yet another VM.
 
 #### Webpages
 
+I had originally set up webpages using [relayd]() and [httpd]()
+following this the guide [How to setup a web server with
+OpenBSD](https://www.bsdhowto.ch/webserver.html).
+
+It covers setting up HTTPS using Let's Encrypt which is not a
+straightforward topic/process. TLS termination happens at relayd (the
+loadbalancer), and it forwards the request to the underlying services.
+
+However, when I started self hosting an IRC client (see below) on the
+VPS, I needed the equivalent of NGINX's `proxy_pass` which was not
+supported on httpd. I started using NGINX.
+
 #### Gemini Capsule
+
+I chose [vger](https://tildegit.org/solene/vger) which was a
+lightweight Gemini server. I want to thank
+[Solène](https://dataswamp.org/~solene/) for assisting me with
+debugging my issues and setting up my Gemini capsule. There was a
+situation where she needed to make a small modification to vger which
+she was kind enough to do. 
+
+The setup instructions can be found in the vger docs. I didn't do
+anything different.
 
 #### IRC
 
+I've been using irssi and weechat on remote machines for
+years. However, after getting used to modern IRC knockoffs, I wanted
+the GUI conveniences of being able to easily type emoji, copy paste.
+
+I self host [The Lounge](https://thelounge.chat/) and it has worked
+well enough for an extended period of time. I was concerned that maybe
+this would not build/run on OpenBSD, but was pleasantly surprised when
+it worked.
+
 #### Fossil Wiki
+
+I had a difficult time setting this up on the VPS because I was new to
+**both** OpenBSD **and** [Fossil](https://fossil-scm.org/).
+
+After a lot of frustrating attempts, the final magic incantation
+turned out to be:
+
+```
+fossil server <FOSSIL-FILE> --scgi --localhost --port <PORT> --https --jsmode bundled &
+```
+
+There is some NGINX configuration as well which looks something like:
+
+```
+location ^~ /wiki/ {
+        include scgi_params;
+        scgi_param SCRIPT_NAME "/wiki";
+        scgi_pass localhost:<HOST>;
+}
+```
 
 #### Future plans
 
 Source code hosting, calendar,
 [email](https://www.c0ffee.net/blog/mail-server-guide), Wireguard VPN
 etc.
+
+Will add those sections as I get around to doing them.
 
 ## Conclusion
 
@@ -464,7 +580,7 @@ Absolutely awesome OpenBSD resources.
 
 1. [Roman Zolotarev's website](https://romanzolotarev.com/)
 2. [Bruno Flückiger's massively helpful BSD How To](https://www.bsdhowto.ch/)
-3. [Solène Rapenne's freaking awesome website](https://dataswamp.org/~solene/)
+3. [Solène Rapenne's website](https://dataswamp.org/~solene/)
 
 ## P.S. You can hire me!
 
