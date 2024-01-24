@@ -22,7 +22,7 @@ disappointment when I realised it did not support my wireless
 card. That dashed my hopes of running a NAS with OpenZFS, and I was
 back to deciding what I could install.
 
-As an aside, if you are interested in running FreeBSD, some guides
+As an aside, if we are interested in running FreeBSD, some guides
 that may help are:
 1. [A FreeBSD 11 Desktop How-to](https://cooltrainer.org/a-freebsd-desktop-howto/)
 2. [FreeBSD on a laptop](https://www.c0ffee.net/blog/freebsd-on-a-laptop)
@@ -43,7 +43,7 @@ though it is nice to have.
 ## Installation
 
 The OpenBSD install process was not complicated from what I
-remember. Within around fifteen minutes or so you should have a
+remember. Within around fifteen minutes or so we should have a
 machine that boots into OpenBSD.
 
 ## Maintenance
@@ -56,8 +56,8 @@ have not been able to investigate or isolate what situations causes it
 to do that.
 
 I almost never turn off my desktop. I hibernate every time, because
-it's nice to not have to restart all the programs you need in the way
-you left them last.
+it's nice to not have to restart all the programs we need in the way
+we left them last.
 
 I am not sure what the state of hibernation in the Linux world
 is. Maybe it has improved now.
@@ -78,10 +78,10 @@ recommended.
 
 #### Graphics
 
-FWIU, you have to use AMD cards as they have open source drivers. Not
-sure how NVIDIA cards will fare on OpenBSD.
+We have to use AMD cards as they have open source drivers. Not sure
+how NVIDIA cards will fare on OpenBSD.
 
-#### Wireless
+#### Wireless cards
 
 While OpenBSD supports my wireless card, it is well known that there's
 a bit of a hit when it comes to network throughput. Based on my
@@ -104,7 +104,7 @@ filesystems. It works well enough.
 #### Recovering from a power outage
 
 Using an OpenBSD system for reliable storage/archival of data
-(e.g. like a NAS) is not recommended. You would be better served with
+(e.g. like a NAS) is not recommended. We would be better served with
 the other filesystems commonly used for such purposes.
 
 #### Integrating other filesystems
@@ -114,7 +114,7 @@ source code directly, so some gymnastics (I don't know the details) is
 done to make sure ZFS works on Linux.
 
 However, FreeBSD has no such qualms, so OpenZFS works as an integral
-part of FreeBSD where you can do roll back boot environments, and such
+part of FreeBSD where we can do roll back boot environments, and such
 advanced operations.
 
 It is unlikely that OpenZFS will ever be integrated into OpenBSD. I
@@ -134,10 +134,34 @@ There are ports for software for which official packages are not
 available. That's the natural place to search in before resorting to
 good old installation from source.
 
+### Building OpenBSD itself
+
+One of the reasons I wanted to use a simpler OS was the wish someday
+that someday, I could make meaningful contributions to the community
+in the form of code as well.
+
+I heard someone once say "OpenBSD's premier use case is developing
+OpenBSD itself." Many other use cases can a bit roundabout, and
+occasionally frustrating as mentioned.
+
+I attempted downloading the source code from the version control. I
+had no idea how painful it would be.
+
+#### CVS
+
+Unfortunately, for historical reasons, OpenBSD uses CVS for version
+control. CVS is deeply integrated into the OpenBSD workflows, so it is
+unlikely to change any time soon.
+
+When I tried downloading the source code using CVS, it was downloading
+files one by one (instead of a downloading data and generating the
+files from it like how Git does) and it took a long time, perhaps an
+hour. It was not a nice feeling.
+
 ## Desktop Usage
 
-From the base install, we can quickly make it into a usable state
-without much configuration.
+This is one of the best things I like about OpenBSD. We can go to zero
+to usable with very minimal configuration.
 
 ### Custom Keybindings
 
@@ -145,6 +169,66 @@ I make use of the Hyper and Super keys to help with shortening long
 key chords in Emacs. So instead of having to do something like `C-M-k`
 i.e. (Control+Alt+k), I can rebind that to `H-k` (`Hyper+k`) or `s-k`
 (`Super+k`). This eases the strain on my already burdened fingers.
+
+We'll need to mess around with XKB to get this working how we want it.
+
+I DO NOT know how to use XKB, so all this was done with a lot of error
+prone hackery. It just about works for my needs, so a BIG caveat
+emptor.
+
+#### Keycodes file `~/.xkb/keycodes/local`
+
+```
+xkb_keycodes {
+  <SUPR> = 117;
+};
+```
+
+#### Keymap files
+
+##### `~/.xkb/keymap/hypersuper`
+
+```
+xkb_keymap {
+        xkb_keycodes  { include "xfree86+aliases(qwerty)"       };
+        xkb_types     { include "complete"      };
+        xkb_compat    { include "complete"      };
+        xkb_symbols   { include "pc+us+inet(pc105)+terminate(ctrl_alt_bksp)+hyperswitch(swap)"  };
+        xkb_geometry  { include "pc(pc105)"     };
+};
+```
+
+##### `~/.xkb/keymap/reset`
+
+To reset, if ever I need to do that.
+
+```
+xkb_keymap {
+        xkb_keycodes  { include "xfree86+aliases(qwerty)"       };
+        xkb_types     { include "complete"      };
+        xkb_compat    { include "complete"      };
+        xkb_symbols   { include "pc+us+inet(pc105)+terminate(ctrl_alt_bksp)"    };
+        xkb_geometry  { include "pc(pc105)"     };
+};
+```
+#### Symbols file `~/.xkb/symbols/hyperswitch`
+
+```
+partial modifier_keys
+xkb_symbols "swap" {
+   key <RWIN> { [ Hyper_R, Hyper_L ] };
+   key <RALT> { [ Super_L, Super_R ] };
+   modifier_map Mod3 { Hyper_L, Hyper_R };
+   modifier_map Mod1 { Alt_L, Meta_L };
+};
+```
+
+### Display Server
+
+OpenBSD has its own fork of X called Xenocara. It works fine, however
+this might be disappointing for those who want to use Wayland. Wayland
+is not fully supported as yet, but seems some action is taking place
+[here](https://github.com/openbsd/ports/tree/master/wayland).
 
 ### Window Manager
 
@@ -245,8 +329,8 @@ something to keep in mind.
 
 #### Emacs
 
-A package is available for vanilla Emacs. If you want the
-bleeding-edge JIT compiled Emacs, you're in for a rough ride. I've
+A package is available for vanilla Emacs. If we want the
+bleeding-edge JIT compiled Emacs, we're in for a rough ride. I've
 perceived some slowness with things like magit. Not sure what could be
 the cause of that.
 
@@ -259,16 +343,16 @@ Emacs](https://akrl.sdf.org/gccemacs.html).
 JIT compiled emacs does not work without an extremely complicated set
 of steps that I have unfortunately **not** succeeded in executing.
 
-The issue comes because we need `libgccjit`. You may think that you
+The issue comes because we need `libgccjit`. We may think that we
 can **just** download the source code of GCC and try and build
 it. When I attempted that I realised that the 'GCC' that runs on
 OpenBSD has some extra patches on it and the vanilla GCC code does not
 build the same way it would build on a Linux machine.
 
 [Omar Polo](https://www.omarpolo.com/) was an absolute champ and
-figured this out as you can see on this
+figured this out as we can see on this
 [thread](https://fantastic.earth/@samebchase/111340712771679079). If
-you're feeling brave, you can try it out.
+we're feeling brave, we can try it out.
 
 #### NeoVim
 
@@ -289,9 +373,9 @@ for not mentioning any language that you like. (Feel free to contribute).
 ##### Raku
 
 The 'rakudo' package is outdated, so would recommend installing a more
-recent one using [rakubrew](https://rakubrew.org/). `rakubrew` is a
-Perl program, and fortunately, Perl is an important language on an
-OpenBSD system as many of the system tools are written in it.
+recent one using [rakubrew](https://rakubrew.org/). `rakubrew` is
+fortunately a Perl program, and Perl is well supported on OpenBSD as
+many of the system tools are written in it.
 
 I did run into issues building Rakudo, because of the default
 configuration of `login.conf` as [this
@@ -300,8 +384,8 @@ helped me with what I needed to do.
 
 ##### Common Lisp
 
-You can install [SBCL](https://www.sbcl.org/) from the packages,
-install [Quicklisp](https://www.quicklisp.org/beta/), and you should
+We can install [SBCL](https://www.sbcl.org/) from the packages,
+install [Quicklisp](https://www.quicklisp.org/beta/), and we should
 be good to go.
 
 ##### Clojure
@@ -327,10 +411,12 @@ a bit ugly, but there's no other option.
 Trying to setup a Rust programming environment turned out to be the
 biggest disappointment.
 
-`rustc` can be installed in the packages, but for someone doing
-'serious' Rust development, they would require all the tooling which
-in many cases depends on nightly which requires `rustup` which [does
-not work](https://github.com/rust-lang/rustup/issues/2168) on OpenBSD.
+`rustc` and `cargo` can be installed from the packages, but for
+someone doing serious Rust development, they would require all the
+tooling which in many cases depends on nightly toolchain. The nightly
+toolchain requires `rustup` which [does not
+work](https://github.com/rust-lang/rustup/issues/2168) on
+OpenBSD. This is a massive pain point.
 
 Now, I'm not sure what can be done here, because it requires some work
 including changes to
@@ -366,7 +452,7 @@ Podman, Kubernetes) will not work. You must work around this by
 getting **very** familiar with building and running software from
 source when official packages are not available.
 
-One way you can work around this is to have Linux VMs running, but as
+One way we can work around this is to have Linux VMs running, but as
 mentioned earlier, each of these VMs have the restriction of only
 being able to use one CPU core.
 
@@ -389,7 +475,8 @@ can be followed to build PG from source and to start the DB service.
 
 ##### SQLite
 
-I'm assuming SQLite works well enough because I use Fossil.
+SQLite should work well enough because I use Fossil regularly. Not
+sure how the DB performance compares, but it works.
 
 ### Document Preparation
 
@@ -424,8 +511,8 @@ sounding. Watching tech talks is just about bearable, so that's okay.
 ##### Full Duplex Audio
 
 OpenBSD does not support full duplex audio. This essentially means,
-you cannot mix a stream of audio where one device is recording and
-another is playing audio. You can **only** do one at a time.
+we cannot mix a stream of audio where one device is recording and
+another is playing audio. We can **only** do one at a time.
 
 This is one of my biggest gripes with OpenBSD.
 
@@ -449,10 +536,6 @@ work well.
 
 Webcams work after enabling some video recording flags.
 
-```
-
-```
-
 Video calls do not work because of the missing support for full duplex
 audio mentioned above.
 
@@ -474,7 +557,6 @@ experience, Alpine Linux, Arch Linux and Nix OS work well enough.
 Some have run old versions of Ubuntu as well, but I wouldn't recommend
 running old versions of an OS.
 
-
 ## VPS (VM) Usage
 
 ### OpenBSD Amsterdam
@@ -492,7 +574,7 @@ heartily endorse them.
 ### VPS operations
 
 There are some advantages to be had where one's daily driver OS is
-also the OS of a remotely running machine. You don't need to worry
+also the OS of a remotely running machine. We don't need to worry
 about mild paper cut differences in command line syntax, available
 base tools and it's easy to experiment with changes on the local
 system first instead of having to run yet another VM.
@@ -568,15 +650,54 @@ Will add those sections as I get around to doing them.
 
 ## Conclusion
 
-It might seem that this is a bit too much pain for a working
-desktop. To anyone that feels that way, I can strongly recommend a
+### My ideal computing setup
+
+I list some desirable qualities of my fantasy desktop, and the OSes
+that are known for it.
+
+- Fast redundant storage using OpenZFS (Linux, FreeBSD).
+- Good overall performance (Linux, FreeBSD)
+- The ability to perform multimedia tasks like video calls,
+  live-streaming, editing video, mixing/editing audio. (Linux,
+  proprietary OSes).
+- Light weight base system and excellent documentation (OpenBSD)
+- Extremely stable across upgrades, reliable hibernate. (OpenBSD)
+- Good gaming support. (Linux, proprietary OSes)
+- Secure and conservative by default. (OpenBSD)
+- A good development environment. (Linux, FreeBSD)
+- Declarative dependency management. (NixOS, Guix)
+- The ability to feel smugly superior. (OpenBSD, ArchLinux, FreeBSD, NixOS,
+  <YOUR-OS-HERE> 😂)
+
+It seems that none of the OSes listed above can entirely
+ignored. Every OS is good at a few things and suboptimal at
+others. It's a matter of preference and what we want to optimize for.
+
+It seems I would need three computers to fulfill all of the above.
+
+1. OpenBSD for general purpose use on desktop and remote machines.
+2. NixOS/Guix machine for the things Linux is good at, and exploring
+   declarative dependency management.
+3. A redundant OpenZFS NAS running on FreeBSD.
+
+### Conclusion's conclusion
+
+It might seem that all this is a bit too much pain for a working
+desktop. For anyone that feels that way, I can strongly recommend a
 mainstream Linux distribution which will mostly Just Work™, however if
 you want to sidestep the monoculture and explore some offbeat paths,
 OpenBSD is a good starting point.
 
+Having multiple solid desktop OSes with thriving communities is a good
+thing.
+
+I would like to add a note of heartfelt gratitude to all the OpenBSD
+developers and community members who have built all this and helped me
+along the journey. Thank you!
+
 ## References 
 
-Absolutely awesome OpenBSD resources.
+Some absolutely awesome OpenBSD resources.
 
 1. [Roman Zolotarev's website](https://romanzolotarev.com/)
 2. [Bruno Flückiger's massively helpful BSD How To](https://www.bsdhowto.ch/)
