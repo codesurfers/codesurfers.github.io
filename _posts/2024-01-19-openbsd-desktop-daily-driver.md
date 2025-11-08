@@ -1,4 +1,8 @@
-# [WIP]: Using OpenBSD as a daily driver
+---
+layout: post
+title: "Using OpenBSD as a daily driver"
+author: "Samuel Chase"
+---
 
 ## Journey to explore the BSDs
 
