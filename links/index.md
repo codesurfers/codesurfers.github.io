@@ -65,31 +65,24 @@ tradeoffs need to be carefully considered.
 
 ##### Modern Lisps
 
-[Janet](https://janet-lang.org/)
-
-A modern Clojure-like Lisp without the JVM baggage designed for easy
-embeddability.
-
 [Clojure](https://clojure.org/)
 
 Clojure is a modern Lisp on the JVM (and the browser in the form of
 ClojureScript), which incorporates great ideas from multiple
 paradigms. Easy interoperability with the large number of available
-Java libraries is an added bonus.
+Java libraries can make it a no-brainer for enterprise usage.
 
 It features persistent data structures, a well-designed sequence
 abstraction, great support for concurrency, and to round it off, good
 performance on the JVM.
 
-The error handling and interactivity may not be as good as Common
-Lisp, but it doesn't have all of Common Lisp's warts and historical
-baggage.
+[Janet](https://janet-lang.org/) and [Fennel](https://fennel-lang.org/)
+
+These are modern Clojure-like Lisps without the JVM baggage.
 
 [Racket](http://racket-lang.org/)
 
-A modern dialect of Scheme, which is gradually becoming the premier
-Scheme-ish language. An interesting feature of Racket is that it has
-several "sublanguages".
+A modern dialect of Scheme.
 
 ##### Common Lisp
 
@@ -99,12 +92,8 @@ Steve Losh's recommendations on how to learn Common Lisp.
 
 [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
-An introduction to Common Lisp describing the construction
-of practical, real world programs.
-
-[Articulate Common Lisp](http://articulate-lisp.com/)
-
-A collection of CL resources.
+An introduction to Common Lisp describing the construction of
+practical, real world programs.
 
 #### Programming languages
 
@@ -120,12 +109,6 @@ A logic-programming language. You are probably best off starting with
 
 [Raku](https://raku.org/)
 
-The language formerly known as Perl 6. At some point the Perl
-community decided to create a "new" version of Perl i.e. Perl 6. As
-the changes became more and more backwards-incompatible, they realised
-that they were designing an all-new sister language. In 2020, after
-much discussion and Larry Wall's blessing, Perl 6 was renamed to Raku.
-
 Raku is an expressive, gradually typed, multi-paradigm language
 drawing from the rich history and
 roll-up-your-sleeves-and-get-your-hands-dirty hacker-ethos of Perl
@@ -135,6 +118,11 @@ Notable features include first-class support for grammars, modern
 concurrency primitives, a MOP, being able to easily define arbitrary
 operators, and keeping in line with Perl's legacy, all new regexes.
 
+Raku was formerly known as Perl 6. At some point the Perl community
+decided to create a "new" version of Perl i.e. Perl 6. As the changes
+became more and more backwards-incompatible, they realised that they
+were designing an all-new sister language. In 2020, after much
+discussion and Larry Wall's blessing, Perl 6 was renamed to Raku.
 
 ### Programming Language Theory
 
@@ -144,14 +132,14 @@ A blog and community for programming language enthusiasts.
 
 [Oleg Kiselyov's site](http://okmij.org/ftp/)
 
-Pro research.
+Lots of papers on functional programming, type theory.
 
 ### Networks
 
 [Beej's Guide to Network Programming Using Internet
   Sockets](http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html)
 
-A humorous guide to get started with network programming in C.
+A guide to get started with network programming in C.
 
 ## CS
 
@@ -179,36 +167,33 @@ spending a sizeable amount of your time working with them.
 
 [gdb](https://www.gnu.org/software/gdb/)
 
-The GNU Debugger can help with finding what's going wrong
-with your program. It's usually used to debug C/C++
-programs.
+The GNU Debugger can help with finding what's going wrong with your
+program. It's usually used to debug C/C++ programs.
 
 [ccache](https://ccache.samba.org/)
 
-Building large projects can take a significant amount of
-time. ccache can help with reducing the time spent
-waiting for the build to finish.
+Building large projects can take a significant amount of time. ccache
+can help with reducing the time spent waiting for the build to finish.
 
 ### Text editors
 
 Knowing how to efficiently use a text editor is one of the most useful
 secondary skills of any programmer.
 
-Among the free text editors, vim and emacs have (unfortunately) been
-the state of the art for quite some time now.
+Among the free text editors, vim and emacs are particularly
+formidable. It's undecided as to which is better, just like Tabs vs
+Spaces debate among programmers.
 
 [Vim](http://www.vim.org/others.php)
 
-A modal text editor that has nice key bindings and an
-emphasis on speed. It is an important command-line
-survival skill. Once installed, run the "vimtutor" command
-to start a basic tutorial.
+A modal text editor that has nice key bindings and an emphasis on
+speed. It is an important command-line survival skill. Once installed,
+run the "vimtutor" command to start a basic tutorial.
 
 [Emacs](http://www.gnu.org/software/emacs/tour/)
 
 An operating system containing, amongst many other things, a file
-manager, calculator, games, package manager and (arguably) a text
-editor.
+manager, calculator, games, package manager and also a text editor.
 
 It can be extended in trivial, and non-trivial ways with Emacs Lisp,
 which also happens to be the language it is written in.
@@ -223,29 +208,27 @@ modifier key like "Hyper", to reduce dependence on the Control key.
 Users who prefer Vim's more ergonomic keybindings have a lot of
 options in making Emacs work that way.
 
-[VS Code](https://code.visualstudio.com/)
-
-A modern open-source text editor developed by Microsoft.
-
 [Notepad++](http://www.notepad-plus-plus.org/)
 
 An easy to use, feature-laden text editor.
 
 ### Version Control
 
-A Version Control System (VCS) is used to track changes in
-files. Even the most trivial projects can quickly become
-unmanageable if a VCS is not used.
+A Version Control System (VCS) is used to track changes in files. Even
+the most trivial projects can quickly become unmanageable if a VCS is
+not used.
 
 [Pro Git](http://git-scm.com/book)
 
 A solid introduction to the powerful Git version control system.
 
-[Mercurial](http://hginit.com/01.html)
+[Jujutsu](https://jj-vcs.github.io/)
 
-Mercurial is easier to learn and use when compared to
-Git. This tutorial covers the fundamental idea behind version control
-and basic usage of Mercurial.
+A modern version control system that's been getting some rave reviews.
+
+[Fossil](https://fossil-scm.org)
+
+A lightweight version control system written by [DRH](https://en.wikipedia.org/wiki/D._Richard_Hipp).
 
 [Commit message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 
@@ -254,18 +237,17 @@ is readable.
 
 ### Command-line
 
-Mastering the command line shell gives you unfathomable power and more
-importantly nerd cred. ;-)
+Mastering the command line is not something that can be avoided.
 
-[zsh](https://wiki.archlinux.org/index.php/Zsh)
+[fish](https://fishshell.com/)
 
-A shell with nice completions and other customisable features.
+An easy to use shell, with great defaults.
 
 [tmux](http://tmux.sourceforge.net/)
 
-Switching between multiple terminal emulator instances can
-hamper productivity. This terminal multiplexer can be used
-with a tiling window manager for a killer combination.
+Switching between multiple terminal emulator instances can hamper
+productivity. This terminal multiplexer can be used with a tiling
+window manager for a killer combination.
 
 [GNU coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities)
 
@@ -275,11 +257,6 @@ wizardry.
 
 For as long as text terminals are used, it will be worth your while to
 be comfortable with using these.
-
-[hh](https://github.com/dvorka/hstr)
-
-Allows you to easily view, navigate, search and manage your command
-history.
 
 [fzf](https://github.com/junegunn/fzf)
 
@@ -297,7 +274,7 @@ and grep which can be used to search directories recursively.
 Tiling window managers are useful in a typical programming session
 when you have to repeatedly switch between your text-editor, terminal
 emulator, web-browser, and any number of other programs you may have
-running. Alt-Tab never again!
+running.
 
 [xmonad](http://xmonad.org/)
 
@@ -307,8 +284,11 @@ A tiling window manager written in Haskell.
 
 [Inkscape](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/)
 
-The best open source SVG editor there is. Also allows importing from,
-exporting to the commonly used graphical formats.
+An easy to use vector graphics editor.
+
+[Krita](https://krita.org/)
+
+A digital painting program.
 
 ### Miscellaneous
 
@@ -363,7 +343,11 @@ A selection of commonly used symbols.
 
 [Common Lisp HyperSpec™](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm)
 
-The entire ANSI CL standard in HTML. Rather readable.
+The entire ANSI CL standard in HTML.
+
+[Novaspec](https://novaspec.org/)
+
+A nicer way to read the HyperSpec.
 
 ### Protocols, Specifications
 
@@ -396,8 +380,7 @@ some of our recommendations.
 
 [Debian](http://www.debian.org/)
 
-[neena](http://neena.at/) says that it is a decent operating system. A
-widely used, stable Linux distribution.
+A rock solid and stable Linux distribution.
 
 [Arch Linux](https://www.archlinux.org/)
 
@@ -405,15 +388,16 @@ A Linux distribution with an emphasis on simplicity, configurability
 and having the latest software packages. Rolling releases keep your
 system at the bleeding edge.
 
+[Manjaro](https://manjaro.org/)
+
+A pre-configured distribution based on Arch Linux.
+
 [FreeBSD](https://www.freebsd.org/)
 
 It is worth checking out some BSDs as well. Features include
 first-class support for ZFS, great networking software, excellent
 documentation, no dependence on systemd, and the BSD license for those
 who prefer it to Linux's GPL.
-
-From what we can gather, it works better on slightly older hardware as
-all the latest and greatest drivers may not be well-supported.
 
 BSDs are used in many sites for critical networking infrastructure
 such as firewalls.
@@ -448,7 +432,7 @@ It's a good idea to read this before asking questions on the internet (and in re
 Fascinating insights into the life experiences of a
 scientist, and his colleagues.
 
-[Programming Language Comparison by Mike Vanier](http://users.cms.caltech.edu/~mvanier/hacking/programming.html)
+[Programming Language Comparison by Mike Vanier](https://raw.githubusercontent.com/mvanier/mvanier.github.io/refs/heads/main/home_page_old/hacking/programming.html)
 
 Slightly dated, but still a good comparison between the various
 languages the author has used in his career.
@@ -498,6 +482,4 @@ While we are on the subject of Mr. Norvig, his articles on [Solving
 Every Sudoku Puzzle](http://www.norvig.com/sudoku.html) and [How to
 Write a Spelling Corrector](http://www.norvig.com/spell-correct.html)
 are legendary. It is manifest how powerful and elegant programming can
-be when performed by a master. Any programmer who can write a
-technical article of a similar quality to these two, should be pleased
-with themselves.
+be when performed by a master.
