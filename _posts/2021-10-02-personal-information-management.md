@@ -308,4 +308,4 @@ Thanks for reading. I would like to hear what PIM system works for
 you. 
 
 Send me an email or toot at me on
-[@samebchase@mastodon.social](https://mastodon.social/@samebchase/)!
+[@samebchase@fantastic.earth](https://fantastic.earth/@samebchase/)!
