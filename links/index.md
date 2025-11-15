@@ -5,13 +5,13 @@ title: links
 
 ## Programming
 
-### Basic Tutorials
+### Learning Programming
 
-Python is a great choice to start programming in. It is a
+A widely used programming language like Python is a great choice to start programming in. It is a
 well-designed language with an emphasis on readability. There are a
 multitude of resources and libraries to achieve almost any task
-imaginable.
-
+imaginable. 
+    
 Later on, you can explore other languages, comparing and contrasting
 them with your technical judgement and taste.
 
@@ -53,15 +53,13 @@ A collection of OCaml resources.
 [Real World OCaml](https://realworldocaml.org/)
 
 A book about OCaml, a fast, functional programming language used in
-research and industry. A new edition is in the works.
+research and industry.
 
 #### Lisp
 
-Aaahhhh, the Lisp family of languages. Features of this family include
-expressivity, interactive-development, and macros.
+Features of this family include expressivity, interactive-development (REPL), and metaprogramming in the form of macros (programs that write programs).
 
-Every Lisp language has its strengths and weaknesses, and the
-tradeoffs need to be carefully considered.
+Every Lisp has its own strengths and weaknesses, pick whatever sounds good to you.
 
 ##### Modern Lisps
 
@@ -86,6 +84,8 @@ A modern dialect of Scheme.
 
 ##### Common Lisp
 
+Common Lisp was created to unify some dialects that were there at the time. The language spec is frozen, so code written in CL won't need to be updated frequently to keep up with the times, as is common with many other languages.
+
 [A Road to Common Lisp](https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/)
 
 Steve Losh's recommendations on how to learn Common Lisp.
@@ -95,12 +95,19 @@ Steve Losh's recommendations on how to learn Common Lisp.
 An introduction to Common Lisp describing the construction of
 practical, real world programs.
 
+[SBCL](https://www.sbcl.org/)
+
+Probably the best open source Lisp implementation.
+
+[Clasp](https://clasp-developers.github.io/)
+
+An implementation of CL that focuses on C++ interoperability.
+
 #### Programming languages
 
 [Rust](http://www.rust-lang.org/)
 
-A systems programming language that seems to keep winning Stack
-Overflow's "Most Loved Programming Language" year after year.
+A systems programming language which promotes memory safe programming.
 
 [Prolog](https://en.wikipedia.org/wiki/Prolog)
 
@@ -208,9 +215,9 @@ modifier key like "Hyper", to reduce dependence on the Control key.
 Users who prefer Vim's more ergonomic keybindings have a lot of
 options in making Emacs work that way.
 
-[Notepad++](http://www.notepad-plus-plus.org/)
+[Helix](https://helix-editor.com/)
 
-An easy to use, feature-laden text editor.
+A next-generation vim-inspired text editor.
 
 ### Version Control
 
@@ -224,7 +231,7 @@ A solid introduction to the powerful Git version control system.
 
 [Jujutsu](https://jj-vcs.github.io/)
 
-A modern version control system that's been getting some rave reviews.
+A modern version control system.
 
 [Fossil](https://fossil-scm.org)
 
@@ -399,9 +406,6 @@ first-class support for ZFS, great networking software, excellent
 documentation, no dependence on systemd, and the BSD license for those
 who prefer it to Linux's GPL.
 
-BSDs are used in many sites for critical networking infrastructure
-such as firewalls.
-
 ## Miscellaneous
 
 ### Articles
@@ -444,7 +448,7 @@ languages the author has used in his career.
 [Programming Algorithms](https://lisp-univ-etc.blogspot.com/2019/07/programming-algorithms-book.html)
 
 A freely available book on Programming Algorithms. Common Lisp is used
-as the implementation language, which is a refreshing change.
+as the implementation language.
 
 #### Distributed Systems
 
