@@ -32,6 +32,7 @@ Should be blazing fast.
 
 Should NOT require an internet connection.
 
+As this is software I rely on, it should be handmade.
 
 ## Pen and Paper
 
@@ -46,50 +47,6 @@ You just can't doodle in an IDE. Sometimes in a boring meeting,
 doodling is what might help you get through it. Having a good pen and
 paper nearby is essential for those moments. It would be foolish to
 dismiss Pen and Paper.
-
-
-## A place for digital PostIt™ Notes
-
-I had tried out and used [void](https://github.com/void-rs/void) as a
-terminal task list and as a place to quickly store short snippets of
-text, but I started experienced the limitations and frustrations of
-terminal-only UI. Reluctantly, I moved off it. In any case, it's worth
-checking out for sure.
-
-Later on, I came across [TreeSheets](https://strlen.com/treesheets/)
-on the Orange Site. You can think of it as the lovechild of
-[Org](https://orgmode.org/) and Spreadsheet software.
-
-TreeSheets is used as a digital whiteboard and as a graphical
-outlining tool. It is remarkably powerful, and if there is one tool
-out of all the ones that I mention in this article that you should
-take a look at, it is TreeSheets.
-
-When I take interviews, I have the entire interview outline in a
-TreeSheets document, that I keep referring to structure the interview,
-and also take notes as required.
-
-What I particularly like about TreeSheets, is that the author clearly
-uses it as his daily driver, and it shows with the smooth UI,
-performance and easy to learn keyboard shortcuts.
-
-While it does use a binary format, it is
-[documented](https://github.com/aardappel/treesheets/blob/master/TS/docs/file_format_spec.txt)
-and the author assures us that it should not be too difficult to write
-a parser for it. A small matter of programming.
-
-In terms of tackling writer's block, I find TreeSheets helps me put
-down the words faster than Org. A quick outline and mindmap can be
-exported as plaintext and fleshed out further in Org.
-
-### Future Steps
-
-TreeSheets has a good exporting feature to various formats, but as an
-Org user, I would very much like to see Org export and import which
-would open up game-changing functionality where I can have the option
-to prototype a document either as an Org document in Emacs, or as a
-TreeSheets document, and seamlessly move back and forth as necessary.
-
 
 ## A knowledge base and a cheatsheet
 
